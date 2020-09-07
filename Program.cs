@@ -13,20 +13,11 @@ namespace First
              * Wypisz w konsoli swoje imię i nazwisko, wykorzystując
              * w tym celu wszystkie znane Ci metody wyświetlania komunikatów.
             */
-            string name;
-            string secondname;
 
-
-            Console.WriteLine("Podaj imię:");
-            name = Console.ReadLine();
-            Console.WriteLine("Podaj nazwisko:");
-            secondname = Console.ReadLine();
-
-            Console.WriteLine("pirwszy sposób prezentacji kodu");
-            Console.WriteLine($"{name} {secondname}");
-            Console.WriteLine("\n drugi sposób prezentacji kodu");
-            Console.WriteLine(name + " " + secondname);
-
+            EnterUser enterUser = new EnterUser();
+            enterUser.EnterName();
+            enterUser.PrintDateOfUser();
+           
 
             Console.WriteLine("\n Zadanie nr 2");
             /*
