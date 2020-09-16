@@ -332,7 +332,13 @@ namespace First
         {
             int firstValue21 = 45;
             int secondValue21 = 80 ;
-            
+
+            /*
+             * Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int,
+             * które zostaną zadeklarowane w kodzie programu. Zwróć uwagę na zachowanie programu
+             * i wyświetlone komunikaty.
+            */
+
             if(firstValue21 < secondValue21)
             {
                 Console.WriteLine(firstValue21 + " jest mniejsze od " + secondValue21 );
