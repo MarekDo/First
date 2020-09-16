@@ -123,7 +123,7 @@ namespace First
                 }
                 else if (option == "5")
                 {
-                    TaskContent();
+                    TaskContentLesson_1();
 
                 }
 
@@ -132,7 +132,7 @@ namespace First
         }
     
 
-        static void TaskContent()
+        static void TaskContentLesson_1()
         {
             Console.WriteLine("Wypisz w konsoli swoje imię i nazwisko, wykorzystując w tym celu wszystkie znane Ci metody wyświetlania komunikatów.");
             Console.WriteLine("Zad. 2. Utwórz dwie zmienne liczbowe i przypisz im wartości. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Niech druga liczba nie będzie zerem. Użyj typu danych double. ");
