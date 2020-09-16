@@ -140,6 +140,18 @@ namespace First
             Console.WriteLine("Utwórz dwie zmienne liczbowe typu double. Dla każdego z działań (dodawanie, odejmowanie, mnożenie i dzielenie) przypisz z konsoli nowy zestaw liczb oraz wypisz ich wyniki w konsoli w formie pełnych działań arytmetycznych($”{ }”).");
         }
 
+        static void TaskContentLesson_2()
+        {
+            Console.WriteLine("Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int, które zostaną zadeklarowane w kodzie programu. Zwróć uwagę na zachowanie programu i wyświetlone komunikaty.");
+            Console.WriteLine("Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int ze zdefiniowanymi wartościami, które będą przez Ciebie podane w kodzie. Wypisz wynik porównania w konsoli.");
+            Console.WriteLine("Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int, których wartości zostaną pobrane z konsoli. Wypisz wynik porównania w konsoli.");
+            Console.WriteLine("Napisz program konsolowy, który sprawdzi, czy wartość pobrana z konsoli jest większa od 5 i mniejsza od 20. Wypisz wynik w konsoli.");
+            Console.WriteLine("Napisz program konsolowy, który sprawdzi, czy wartość pobrana z konsoli jest spoza zakresu <5; 20>. Wypisz wynik w konsoli.");
+            Console.WriteLine("Napisz program konsolowy, który pobierze z konsoli dwie liczby całkowite, po czym do trzeciej zmiennej przypisze większą wartość. Wykorzystaj przypisanie warunkowe i wypisz wynik w konsoli.");
+            Console.WriteLine("Napisz program konsolowy, który pobierze z konsoli długości trzech boków trójkąta. Sprawdź, czy z podanych wartości można utworzyć trójkąt. Wypisz wynik w konsoli.");
+            Console.WriteLine("Napisz program konsolowy, który pobierze dwie wartości z konsoli. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Pamiętaj, żeby przy próbie dzielenia przez 0 wyświetlić odpowiedni komunikat, który uniemożliwi przeprowadzenie „zakazanego” działania. Użyj typu danych double.");
+        }
+
         static void LessonNumber_2()
         {
             Console.WriteLine("Wybrales lekcje nr 2");
@@ -156,6 +168,11 @@ namespace First
                     Console.Clear();
                     Lesson2Part1();
                     Console.ReadKey();
+                }
+                else if (option == "9")
+                {
+                    TaskContentLesson_2();
+
                 }
             }
             LessonOfService();
