@@ -338,15 +338,16 @@ namespace First
              * i wyświetlone komunikaty.
             */
 
-            if(firstValue21 < secondValue21)
+            if(firstValue21 == secondValue21)
             {
-                Console.WriteLine(firstValue21 + " jest mniejsze od " + secondValue21 );
+                Console.WriteLine(firstValue21 + " równe " + secondValue21 );
             }
-            else
+            else if(firstValue21 < secondValue21)
             {
                 Console.WriteLine(firstValue21 + " jest mniejsze od " + secondValue21);
             }
-
+            Console.WriteLine(firstValue21 + " jest większe " + secondValue21);
+            
             Console.ReadKey();
 
         }
