@@ -151,6 +151,13 @@ namespace First
                     Lesson2Part1();
                     Console.ReadKey();
                 }
+                else if (option == "2")
+                {
+                    Console.Clear();
+                    Lesson2Part2();
+                    Console.ReadKey();
+                }
+
                 else if (option == "9")
                 {
                     TaskContentLesson_2();
@@ -350,6 +357,32 @@ namespace First
             
             Console.ReadKey();
 
+        }
+
+        static void Lesson2Part2()
+        {
+            /*
+             * Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int ze zdefiniowanymi wartościami, 
+             * które będą przez Ciebie podane w kodzie. Wypisz wynik porównania w konsoli.
+             */
+
+            int firstValue;
+            int secondValue;
+
+            firstValue = 800;
+            secondValue = 600;
+
+            if (firstValue == secondValue)
+            {
+                Console.WriteLine(firstValue +" = "+ secondValue);
+            }
+            else if(firstValue < secondValue)
+            {
+                Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
+            }
+            Console.WriteLine(firstValue + " jest większe od " + secondValue);
+
+            Console.ReadKey();
         }
 
         static void TaskContentLesson_1()
