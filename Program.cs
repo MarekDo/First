@@ -381,7 +381,7 @@ namespace First
                 Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
             }
             Console.WriteLine(firstValue + " jest większe od " + secondValue);
-
+            Console.WriteLine("Wciśnij dowolny klawisz ...");
             Console.ReadKey();
         }
 
