@@ -157,6 +157,12 @@ namespace First
                     Lesson2Part2();
                     Console.ReadKey();
                 }
+                else if (option == "3")
+                {
+                    Console.Clear();
+                    Lesson2Part3();
+                    Console.ReadKey();
+                }
 
                 else if (option == "9")
                 {
@@ -383,6 +389,45 @@ namespace First
             Console.WriteLine(firstValue + " jest większe od " + secondValue);
             Console.WriteLine("Wciśnij dowolny klawisz ...");
             Console.ReadKey();
+        }
+
+        static void Lesson2Part3()
+        {
+            /*
+             * Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int, 
+             * których wartości zostaną pobrane z konsoli. 
+             * Wypisz wynik porównania w konsoli.
+             */
+
+            int firstValue;
+            int secondValue;
+            string stringValue;
+
+            Console.WriteLine("Wprowadź dwie liczby całkowite ");
+            Console.WriteLine("Wprowadź pierwszą liczbę: ");
+            stringValue = Console.ReadLine();
+            firstValue = int.Parse(stringValue);
+            Console.WriteLine("Wskazana wartość do porównania to: " + firstValue);
+            Console.WriteLine("Podaj drugą liczbę: ");
+            stringValue = Console.ReadLine();
+            secondValue = int.Parse(stringValue);
+            Console.WriteLine("Druga liczba do porównania to: " + secondValue);
+            Console.WriteLine("porównanie ...");
+
+            if (firstValue == secondValue)
+            {
+                Console.WriteLine(firstValue + " i " + secondValue + "są takie same");
+            }
+            else if (firstValue < secondValue)
+            {
+                Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
+            }
+            else if(firstValue > secondValue)
+            Console.WriteLine(firstValue + " jest większe od " + secondValue);
+
+            Console.WriteLine("Wcosnij dowolny klawisz ...");
+            Console.ReadKey();
+
         }
 
         static void TaskContentLesson_1()
