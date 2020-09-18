@@ -175,6 +175,12 @@ namespace First
                     Lesson2Part5();
                     Console.ReadKey();
                 }
+                else if (option == "6")
+                {
+                    Console.Clear();
+                    Lesson2Part6();
+                    Console.ReadKey();
+                }
 
                 else if (option == "9")
                 {
@@ -472,6 +478,57 @@ namespace First
         static void Lesson2Part5()
         {
             Lesson2Part4();
+        }
+
+        static void Lesson2Part6()
+        {
+            /*
+             * Napisz program konsolowy, który pobierze z konsoli dwie liczby całkowite, 
+             * po czym do trzeciej zmiennej przypisze większą wartość. 
+             * Wykorzystaj przypisanie warunkowe i wypisz wynik w konsoli.
+             */
+            int firstValue;
+            int secondValue;
+            int greaterValue;
+            string movingValue;
+
+            Console.WriteLine("Podaj pierwszą liczbę:");
+            movingValue = Console.ReadLine();
+            firstValue = int.Parse(movingValue);
+            Console.WriteLine("Wprowadź drugą wartość:");
+            movingValue = Console.ReadLine();
+            secondValue = int.Parse(movingValue);
+
+            if(firstValue == secondValue)
+            {
+                Console.WriteLine("obie rartości są takie same");
+                greaterValue = firstValue;
+            }
+            else if (firstValue < secondValue)
+            {
+                greaterValue = secondValue;
+                Console.WriteLine("Wieksza wartośc to: " + greaterValue);
+            }
+            else
+            {
+                greaterValue = firstValue;
+                Console.WriteLine("Większa wartość to: " + greaterValue);
+            }
+
+        }
+
+        static void Lesson2Part7()
+        {
+            /*
+             * Napisz program konsolowy, który pobierze z konsoli długości trzech boków trójkąta.
+             * Sprawdź, czy z podanych wartości można utworzyć trójkąt. Wypisz wynik w konsoli.
+             */
+
+            double firstSide;
+            double scondSide;
+            double thirdSide;
+
+
         }
 
         static void TaskContentLesson_1()
