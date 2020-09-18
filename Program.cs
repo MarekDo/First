@@ -163,6 +163,12 @@ namespace First
                     Lesson2Part3();
                     Console.ReadKey();
                 }
+                else if(option == "4")
+                {
+                    Console.Clear();
+                    Lesson2Part4();
+                    Console.ReadKey();
+                }
 
                 else if (option == "9")
                 {
@@ -428,6 +434,33 @@ namespace First
             Console.WriteLine("Wcosnij dowolny klawisz ...");
             Console.ReadKey();
 
+        }
+
+        static void Lesson2Part4()
+        {
+            /*
+             * Napisz program konsolowy, który sprawdzi, 
+             * czy wartość pobrana z konsoli jest 
+             * większa od 5 i mniejsza od 20. Wypisz wynik w konsoli.
+             */
+
+            int firstValue = 5;
+            int secondValue = 20;
+            int movingVariable;
+            string stringMovingVariable;
+
+            Console.WriteLine("Wprowadź wartość do porównania:");
+            stringMovingVariable = Console.ReadLine();
+            movingVariable = int.Parse(stringMovingVariable);
+
+            if (movingVariable > firstValue && movingVariable < secondValue) 
+            {
+                Console.WriteLine("podana wartość jest z przedziału pomiędzy 5 a 20");
+            }
+            else
+            {
+                Console.WriteLine("Podana wartość jest spoza zakresu 5 a 20");
+            }
         }
 
         static void TaskContentLesson_1()
