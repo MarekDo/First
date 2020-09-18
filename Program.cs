@@ -169,6 +169,12 @@ namespace First
                     Lesson2Part4();
                     Console.ReadKey();
                 }
+                else if (option == "5")
+                {
+                    Console.Clear();
+                    Lesson2Part5();
+                    Console.ReadKey();
+                }
 
                 else if (option == "9")
                 {
@@ -461,6 +467,11 @@ namespace First
             {
                 Console.WriteLine("Podana wartość jest spoza zakresu 5 a 20");
             }
+        }
+
+        static void Lesson2Part5()
+        {
+            Lesson2Part4();
         }
 
         static void TaskContentLesson_1()
