@@ -79,7 +79,22 @@ namespace First
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
 
-        static void LessonNumber_1()
+        static void MenuOfLesson3()
+        {
+            Console.Clear();
+            Console.WriteLine("Lekcja 2");
+            Console.WriteLine("1. Zadanie nr 1");
+            Console.WriteLine("2. Zadanie nr 2");
+            Console.WriteLine("3. Zadanie nr 3");
+            Console.WriteLine("4. Zadanie nr 4");
+            Console.WriteLine("5. Zadanie nr 5");
+            Console.WriteLine("6. Zadanie nr 6");
+            Console.WriteLine("7. Zadanie nr 7");
+            Console.WriteLine("8. Zadanie nr 8");
+            Console.WriteLine("0. Wyjście");
+            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+        }
+            static void LessonNumber_1()
         {
             Console.WriteLine("Wybrales lekcje nr 1");
             MenuOfLesson();
