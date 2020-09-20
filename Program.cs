@@ -210,6 +210,75 @@ namespace First
                     Console.ReadKey();
                 }
 
+                else if (option == "0")
+                {
+                    TaskContentLesson_2();
+
+                }
+            }
+            LessonOfService();
+        }
+
+        static void LessonNumber_3()
+        {
+            Console.WriteLine("Wybrales lekcje nr 3");
+            MenuOfLesson();
+            string option = Console.ReadLine();
+
+            while (option != "0")
+            {
+                MenuOfLesson3();
+                option = Console.ReadLine();
+
+                if (option == "1")
+                {
+                    Console.Clear();
+                    //Lesson3Part1();
+                    Console.ReadKey();
+                }
+                else if (option == "2")
+                {
+                    Console.Clear();
+                    //Lesson3Part2();
+                    Console.ReadKey();
+                }
+                else if (option == "3")
+                {
+                    Console.Clear();
+                    //Lesson3Part3();
+                    Console.ReadKey();
+                }
+                else if (option == "4")
+                {
+                    Console.Clear();
+                    //Lesson3Part4();
+                    Console.ReadKey();
+                }
+                else if (option == "5")
+                {
+                    Console.Clear();
+                    //Lesson3Part5();
+                    Console.ReadKey();
+                }
+                else if (option == "6")
+                {
+                    Console.Clear();
+                    //Lesson3Part6();
+                    Console.ReadKey();
+                }
+                else if (option == "7")
+                {
+                    Console.Clear();
+                    //Lesson3Part7();
+                    Console.ReadKey();
+                }
+                else if (option == "8")
+                {
+                    Console.Clear();
+                    //Lesson3Part8();
+                    Console.ReadKey();
+                }
+
                 else if (option == "9")
                 {
                     TaskContentLesson_2();
