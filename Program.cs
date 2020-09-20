@@ -18,6 +18,7 @@ namespace First
             Console.WriteLine("Podaj nr lekcji");
             Console.WriteLine("1. Zobacz zadania do lekcji nr 1.");
             Console.WriteLine("2. Zobacz zadania do lekcji nr 2.");
+            Console.WriteLine("3. Zobacz zadania do lekcji nr 3.");
             Console.WriteLine("15. Zakończ program.");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
 
