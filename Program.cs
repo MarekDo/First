@@ -32,10 +32,17 @@ namespace First
             {
                 LessonNumber_2();
             }
+            else if (option == "3")
+            {
+                LessonNumber_3();
+            }
             else if (option == "15")
+            {
                 Console.Clear();
                 Console.WriteLine("Dziękuję za udział i do zobaczenia:");
                 return;
+            }
+                
 
 
         }
@@ -147,8 +154,6 @@ namespace First
             LessonOfService();
         }
     
-
- 
 
         static void LessonNumber_2()
         {
