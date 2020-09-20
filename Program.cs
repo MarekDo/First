@@ -559,7 +559,35 @@ namespace First
 
          }
 
+        static void Lesson2Part8()
+        {
+            /*
+             * Napisz program konsolowy, który pobierze dwie wartości z konsoli. 
+             * Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. 
+             * Pamiętaj, żeby przy próbie dzielenia przez 0 wyświetlić odpowiedni komunikat, 
+             * który uniemożliwi przeprowadzenie „zakazanego” działania. 
+             * Użyj typu danych double.
+             */
 
+            double firstValue;
+            double secondValue;
+            string auxiliaryValue;
+
+            Console.WriteLine("Wprowadź pierwszą wartość:");
+            auxiliaryValue = Console.ReadLine();
+            firstValue = double.Parse(auxiliaryValue);
+            Console.WriteLine("Wprowadź drugą wartość:");
+            auxiliaryValue = Console.ReadLine();
+            secondValue = double.Parse(auxiliaryValue);
+
+            Console.WriteLine("Wynik dodawania: " + firstValue + " + " + secondValue + " = " + (firstValue + secondValue));
+            Console.WriteLine("Wynik odejmowania: " + firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
+            Console.WriteLine("Wynik mnożenia: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
+
+            
+
+
+        }
 
 
         static double EnterSideValue()
