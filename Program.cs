@@ -181,6 +181,12 @@ namespace First
                     Lesson2Part6();
                     Console.ReadKey();
                 }
+                else if (option == "7")
+                {
+                    Console.Clear();
+                    Lesson2Part7();
+                    Console.ReadKey();
+                }
 
                 else if (option == "9")
                 {
@@ -525,10 +531,50 @@ namespace First
              */
 
             double firstSide;
-            double scondSide;
+            double secondSide;
             double thirdSide;
+            
+            Console.WriteLine("Podaj długości trzech boków trójkąta.");
+            Console.WriteLine("wartości muszą być większe od zera");
+            
+            Console.WriteLine("Wpisz długość pierwszego boku:");
+            firstSide = EnterSideValue();
+            
+            Console.WriteLine("Wpisz długość drugiego boku:");
+            secondSide = EnterSideValue(); 
+            
+            Console.WriteLine("Wpisz długość trzeciego boku:");
+            thirdSide = EnterSideValue();
+
+            if ((firstSide + secondSide > thirdSide) 
+                && (secondSide + thirdSide > firstSide) 
+                && (firstSide + thirdSide > secondSide))
+            {
+                Console.WriteLine("Z podanych wartości można utworzyć trójkąt");
+            }
+            else
+            {
+                Console.WriteLine("Przykro mi z podanych wartości nie mozna utworzyć trójkąta.");
+            }
+
+         }
 
 
+
+
+        static double EnterSideValue()
+        {
+        string auxiliaryValue = Console.ReadLine();
+            double side = double.Parse(auxiliaryValue);
+
+            while(side <= 0)
+            {
+                    Console.WriteLine("wprowadziłeś wartość mniejszą lub równą zero");
+                    Console.WriteLine("Wprowadź jeszcze raz poprawną wartość większą od zera !!!");
+                auxiliaryValue = Console.ReadLine();
+                side = double.Parse(auxiliaryValue);
+            }
+            return side;
         }
 
         static void TaskContentLesson_1()
