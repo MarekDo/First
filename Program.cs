@@ -187,6 +187,12 @@ namespace First
                     Lesson2Part7();
                     Console.ReadKey();
                 }
+                else if (option == "8")
+                {
+                    Console.Clear();
+                    Lesson2Part8();
+                    Console.ReadKey();
+                }
 
                 else if (option == "9")
                 {
@@ -583,9 +589,14 @@ namespace First
             Console.WriteLine("Wynik dodawania: " + firstValue + " + " + secondValue + " = " + (firstValue + secondValue));
             Console.WriteLine("Wynik odejmowania: " + firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
             Console.WriteLine("Wynik mnożenia: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
-
-            
-
+            if (secondValue != 0)
+            {
+                Console.WriteLine("Wynik dzielenia: " + firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
+            }
+            else
+            {
+                Console.WriteLine("Dzielenie niewykonalne gdyż chcesz dzielić przez zero!! ");
+            }
 
         }
 
