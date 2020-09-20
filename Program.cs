@@ -465,8 +465,8 @@ namespace First
 
         static void Lesson2Part1()
         {
-            int firstValue21 = 45;
-            int secondValue21 = 80 ;
+            int firstValue = 45;
+            int secondValue = 80 ;
 
             /*
              * Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int,
@@ -474,15 +474,16 @@ namespace First
              * i wyświetlone komunikaty.
             */
 
-            if(firstValue21 == secondValue21)
+            if(firstValue == secondValue)
             {
-                Console.WriteLine(firstValue21 + " równe " + secondValue21 );
+                Console.WriteLine(firstValue + " równe " + secondValue);
             }
-            else if(firstValue21 < secondValue21)
+            else if(firstValue < secondValue)
             {
-                Console.WriteLine(firstValue21 + " jest mniejsze od " + secondValue21);
+                Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
             }
-            Console.WriteLine(firstValue21 + " jest większe " + secondValue21);
+            else 
+                Console.WriteLine(firstValue + " jest większe " + secondValue);
             
             Console.ReadKey();
 
