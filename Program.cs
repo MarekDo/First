@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using System;
 using System.Dynamic;
+using System.Linq.Expressions;
 
 namespace First
 {
@@ -246,13 +247,13 @@ namespace First
                 else if (option == "2")
                 {
                     Console.Clear();
-                    //Lesson3Part2();
+                    Lesson3Part2();
                     Console.ReadKey();
                 }
                 else if (option == "3")
                 {
                     Console.Clear();
-                    //Lesson3Part3();
+                    Lesson3Part3();
                     Console.ReadKey();
                 }
                 else if (option == "4")
@@ -774,6 +775,71 @@ namespace First
 
             }
 
+        }
+
+        static void Lesson3Part2()
+        {
+            /*
+             * Wykonaj Zad. 1. modyfikując strukturę if…else na if…else if…else. Dostrzegasz różnicę?
+             */
+        }
+
+        static void Lesson3Part3()
+        {
+            /*
+             * Wykonaj Zad. 1. wykorzystując tym razem blok switch…case. 
+             * Która wersja programu Twoim zdaniem jest czytelniejsza?
+             */
+
+
+            string auxiliaryValue;
+
+                 
+            Console.WriteLine("Kalkulator - sam wybierz działanie");
+            Console.WriteLine("1. Rozpocznij");
+            Console.WriteLine("2. Zakończ");
+            auxiliaryValue = Console.ReadLine();
+            if (auxiliaryValue != "1")
+            {
+                return;
+            }
+
+
+            Console.WriteLine("Wprowadź pierwszą liczbę:");
+            double firstValue = double.Parse(Console.ReadLine());
+            Console.WriteLine("Wprowadź drugą liczbę:");
+            double secondValue = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Wprowadź działanie: 1 - dodawanie; 2 - odejmowanie; 3 - odejmowanie; 4 - dzielenie");
+            int menuValue = int.Parse(Console.ReadLine());          
+
+            switch (menuValue)
+            {
+                case 1:
+                    Console.WriteLine("1. Dodawanie: " + firstValue + " + " + secondValue + " = " + (firstValue + secondValue));
+                    break;
+                case 2:
+                    Console.WriteLine("2. Odejmowanie: " + firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
+                    break;
+                case 3:
+                    Console.WriteLine("2. Mnożenie: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
+                    break;
+                case 4:
+                    if (secondValue != 0)
+                    {
+                        Console.WriteLine("2. Dzielenie: " + firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wprowadziłeś drugą wartość równą zero. A zasada mówi: nie dziel cholero przez zero");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("");
+                    break;
+
+
+            }
         }
 
         static double EnterSideValue()
