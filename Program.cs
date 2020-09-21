@@ -259,7 +259,7 @@ namespace First
                 else if (option == "4")
                 {
                     Console.Clear();
-                    //Lesson3Part4();
+                    Lesson3Part4();
                     Console.ReadKey();
                 }
                 else if (option == "5")
@@ -843,6 +843,92 @@ namespace First
             }
         }
 
+        static void Lesson3Part4()
+        {
+            /*
+             * Utwórz 4 metody: 
+             * dodawanie (Addition), 
+             * odejmowanie (Substraction), 
+             * mnożenie (Multiplication), 
+             * dzielenie (Division). 
+             * Wykorzystaj je w kalkulatorze, z Zad. 2. bądź Zad. 3., 
+             * którego zapis jest Twoim zdaniem czytelniejszy. 
+             * Jak bardzo skrócił się kod Twojego programu?
+             */
+            string auxiliaryValue;
+
+
+            Console.WriteLine("Kalkulator - sam wybierz działanie");
+            Console.WriteLine("1. Rozpocznij");
+            Console.WriteLine("2. Zakończ");
+            auxiliaryValue = Console.ReadLine();
+            if (auxiliaryValue != "1")
+            {
+                return;
+            }
+
+            Console.WriteLine("Wprowadź pierwszą liczbę:");
+            double firstValue = EnterValue34();
+            Console.WriteLine("Wprowadź drugą liczbę:");
+            double secondValue = EnterValue34();
+            double result;
+
+            Console.WriteLine("Wprowadź działanie: 1 - dodawanie; 2 - odejmowanie; 3 - odejmowanie; 4 - dzielenie");
+            int menuValue = int.Parse(Console.ReadLine());
+
+            switch (menuValue)
+            {
+                case 1:                
+                    Console.WriteLine("Dodawanie: " + firstValue + " + " + secondValue + " = " + (Addition34(firstValue, secondValue)));
+                        break;
+                case 2:
+                    Substraction34(firstValue, secondValue);
+                    break;
+                case 3:
+                    Multiplication34(firstValue, secondValue);
+                    break;
+                case 4:
+                    Division34(firstValue, secondValue);
+                    break;
+                default:
+                    Console.WriteLine("");
+                    break;
+            }
+        }
+
+        static void Division34(double firstValue, double secondValue)
+        {
+            if (secondValue != 0)
+            {
+                Console.WriteLine("2. Dzielenie: " + firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
+            }
+            else
+            {
+                Console.WriteLine("Wprowadziłeś drugą wartość równą zero. A zasada mówi: nie dziel cholero przez zero");
+            }
+        }
+
+        static void Multiplication34(double firstValue, double secondValue)
+        {
+            Console.WriteLine("2. Mnożenie: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
+        }
+        static double Substraction34(double firstValue, double secondValue)
+        {
+            Console.WriteLine("2. Odejmowanie: " + firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
+        }
+
+        static double Addition34(double firstValue, double secondValue)
+        {
+            return firstValue + secondValue;
+        }
+
+        static double EnterValue34()
+        {
+            double variableValue = double.Parse(Console.ReadLine());
+            return variableValue;
+        }
+
+        
         static double EnterSideValue()
         {
         string auxiliaryValue = Console.ReadLine();
