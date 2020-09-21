@@ -871,8 +871,7 @@ namespace First
             double firstValue = EnterValue34();
             Console.WriteLine("Wprowadź drugą liczbę:");
             double secondValue = EnterValue34();
-            double result;
-
+           
             Console.WriteLine("Wprowadź działanie: 1 - dodawanie; 2 - odejmowanie; 3 - odejmowanie; 4 - dzielenie");
             int menuValue = int.Parse(Console.ReadLine());
 
@@ -882,7 +881,7 @@ namespace First
                     Console.WriteLine("Dodawanie: " + firstValue + " + " + secondValue + " = " + (Addition34(firstValue, secondValue)));
                         break;
                 case 2:
-                    Substraction34(firstValue, secondValue);
+                    Console.WriteLine("Dodawanie: " + firstValue + " - " + secondValue + " = " + (Substraction34(firstValue, secondValue)));
                     break;
                 case 3:
                     Multiplication34(firstValue, secondValue);
@@ -914,7 +913,7 @@ namespace First
         }
         static double Substraction34(double firstValue, double secondValue)
         {
-            Console.WriteLine("2. Odejmowanie: " + firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
+           return firstValue - secondValue;
         }
 
         static double Addition34(double firstValue, double secondValue)
