@@ -44,14 +44,14 @@ namespace First
                 Console.WriteLine("Dziękuję za udział i do zobaczenia:");
                 return;
             }
-                
+
 
 
         }
 
         static void MenuOfLesson()
         {
-            
+
             Console.Clear();
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Rozwiązania zadań.");
@@ -111,10 +111,10 @@ namespace First
             string option = Console.ReadLine();
 
             while (option != "0")
-            { 
+            {
                 MenuOfLessonNr1();
                 option = Console.ReadLine();
-            
+
                 if (option == "1")
                 {
                     Console.Clear();
@@ -156,7 +156,7 @@ namespace First
             }
             LessonOfService();
         }
-    
+
 
         static void LessonNumber_2()
         {
@@ -164,7 +164,7 @@ namespace First
             MenuOfLesson();
             string option = Console.ReadLine();
 
-            while(option != "0")
+            while (option != "0")
             {
                 MenuOfLesson2();
                 option = Console.ReadLine();
@@ -187,7 +187,7 @@ namespace First
                     Lesson2Part3();
                     Console.ReadKey();
                 }
-                else if(option == "4")
+                else if (option == "4")
                 {
                     Console.Clear();
                     Lesson2Part4();
@@ -265,7 +265,7 @@ namespace First
                 else if (option == "5")
                 {
                     Console.Clear();
-                    //Lesson3Part5();
+                    Lesson3Part5();
                     Console.ReadKey();
                 }
                 else if (option == "6")
@@ -466,7 +466,7 @@ namespace First
         static void Lesson2Part1()
         {
             int firstValue = 45;
-            int secondValue = 80 ;
+            int secondValue = 80;
 
             /*
              * Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int,
@@ -474,17 +474,17 @@ namespace First
              * i wyświetlone komunikaty.
             */
 
-            if(firstValue == secondValue)
+            if (firstValue == secondValue)
             {
                 Console.WriteLine(firstValue + " równe " + secondValue);
             }
-            else if(firstValue < secondValue)
+            else if (firstValue < secondValue)
             {
                 Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
             }
-            else 
+            else
                 Console.WriteLine(firstValue + " jest większe " + secondValue);
-            
+
             Console.ReadKey();
 
         }
@@ -504,9 +504,9 @@ namespace First
 
             if (firstValue == secondValue)
             {
-                Console.WriteLine(firstValue +" = "+ secondValue);
+                Console.WriteLine(firstValue + " = " + secondValue);
             }
-            else if(firstValue < secondValue)
+            else if (firstValue < secondValue)
             {
                 Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
             }
@@ -546,8 +546,8 @@ namespace First
             {
                 Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
             }
-            else if(firstValue > secondValue)
-            Console.WriteLine(firstValue + " jest większe od " + secondValue);
+            else if (firstValue > secondValue)
+                Console.WriteLine(firstValue + " jest większe od " + secondValue);
 
             Console.WriteLine("Wcosnij dowolny klawisz ...");
             Console.ReadKey();
@@ -571,7 +571,7 @@ namespace First
             stringMovingVariable = Console.ReadLine();
             movingVariable = int.Parse(stringMovingVariable);
 
-            if (movingVariable > firstValue && movingVariable < secondValue) 
+            if (movingVariable > firstValue && movingVariable < secondValue)
             {
                 Console.WriteLine("podana wartość jest z przedziału pomiędzy 5 a 20");
             }
@@ -605,7 +605,7 @@ namespace First
             movingValue = Console.ReadLine();
             secondValue = int.Parse(movingValue);
 
-            if(firstValue == secondValue)
+            if (firstValue == secondValue)
             {
                 Console.WriteLine("obie rartości są takie same");
                 greaterValue = firstValue;
@@ -633,21 +633,21 @@ namespace First
             double firstSide;
             double secondSide;
             double thirdSide;
-            
+
             Console.WriteLine("Podaj długości trzech boków trójkąta.");
             Console.WriteLine("wartości muszą być większe od zera");
-            
+
             Console.WriteLine("Wpisz długość pierwszego boku:");
             firstSide = EnterSideValue();
-            
+
             Console.WriteLine("Wpisz długość drugiego boku:");
-            secondSide = EnterSideValue(); 
-            
+            secondSide = EnterSideValue();
+
             Console.WriteLine("Wpisz długość trzeciego boku:");
             thirdSide = EnterSideValue();
 
-            if ((firstSide + secondSide > thirdSide) 
-                && (secondSide + thirdSide > firstSide) 
+            if ((firstSide + secondSide > thirdSide)
+                && (secondSide + thirdSide > firstSide)
                 && (firstSide + thirdSide > secondSide))
             {
                 Console.WriteLine("Z podanych wartości można utworzyć trójkąt");
@@ -657,7 +657,7 @@ namespace First
                 Console.WriteLine("Przykro mi z podanych wartości nie mozna utworzyć trójkąta.");
             }
 
-         }
+        }
 
         static void Lesson2Part8()
         {
@@ -721,8 +721,8 @@ namespace First
             Console.WriteLine("Wciśnij 1 aby rozpocząć.");
             Console.WriteLine("Wciśnij 0 aby zakończyć.");
             menuValue = Console.ReadLine();
-            
-            if(menuValue == "1") {
+
+            if (menuValue == "1") {
                 while (menuValue == "1")
                 {
                     string miniMenuValue;
@@ -795,7 +795,7 @@ namespace First
 
             string auxiliaryValue;
 
-                 
+
             Console.WriteLine("Kalkulator - sam wybierz działanie");
             Console.WriteLine("1. Rozpocznij");
             Console.WriteLine("2. Zakończ");
@@ -812,7 +812,7 @@ namespace First
             double secondValue = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Wprowadź działanie: 1 - dodawanie; 2 - odejmowanie; 3 - odejmowanie; 4 - dzielenie");
-            int menuValue = int.Parse(Console.ReadLine());          
+            int menuValue = int.Parse(Console.ReadLine());
 
             switch (menuValue)
             {
@@ -871,15 +871,15 @@ namespace First
             double firstValue = EnterValue34();
             Console.WriteLine("Wprowadź drugą liczbę:");
             double secondValue = EnterValue34();
-           
+
             Console.WriteLine("Wprowadź działanie: 1 - dodawanie; 2 - odejmowanie; 3 - odejmowanie; 4 - dzielenie");
             int menuValue = int.Parse(Console.ReadLine());
 
             switch (menuValue)
             {
-                case 1:                
+                case 1:
                     Console.WriteLine("Dodawanie: " + firstValue + " + " + secondValue + " = " + (Addition34(firstValue, secondValue)));
-                        break;
+                    break;
                 case 2:
                     Console.WriteLine("Dodawanie: " + firstValue + " - " + secondValue + " = " + (Substraction34(firstValue, secondValue)));
                     break;
@@ -895,38 +895,122 @@ namespace First
             }
         }
 
-        static void Division34(double firstValue, double secondValue)
+        static void Lesson3Part5()
         {
-            if (secondValue != 0)
+            /*
+             * Utwórz jeszcze 3 metody: dzielenie z resztą, 
+             * druga potęga, trzecia potęga (nazewnictwo wedle uznania). 
+             * Dodaj je do swojego kalkulatora.
+             */
+            string auxiliaryValue;
+
+
+            Console.WriteLine("Kalkulator - sam wybierz działanie");
+            Console.WriteLine("1. Rozpocznij");
+            Console.WriteLine("2. Zakończ");
+            auxiliaryValue = Console.ReadLine();
+            if (auxiliaryValue != "1")
             {
-                Console.WriteLine("2. Dzielenie: " + firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
+                return;
             }
-            else
+
+            Console.WriteLine("Wprowadź pierwszą liczbę:");
+            double firstValue = EnterValue34();
+            Console.WriteLine("Wprowadź drugą liczbę:");
+            double secondValue = EnterValue34();
+
+            Console.WriteLine("Wprowadź działanie: \n 1 - dodawanie; \n 2 - odejmowanie; " +
+                "\n 3 - odejmowanie; \n 4 - dzielenie; \n 5 - dzielenie z resztą; \n 6 - potęgowanie kwadratowe; \n " +
+                "7 - trzecia potęga; \n 8 - dowolna potęga;");
+
+            int menuValue = int.Parse(Console.ReadLine());
+
+            switch (menuValue)
             {
-                Console.WriteLine("Wprowadziłeś drugą wartość równą zero. A zasada mówi: nie dziel cholero przez zero");
+                case 1:
+                    Console.WriteLine("Dodawanie: " + firstValue + " + " + secondValue + " = " + (Addition34(firstValue, secondValue)));
+                    break;
+                case 2:
+                    Console.WriteLine("Dodawanie: " + firstValue + " - " + secondValue + " = " + (Substraction34(firstValue, secondValue)));
+                    break;
+                case 3:
+                    Multiplication34(firstValue, secondValue);
+                    break;
+                case 4:
+                    Division34(firstValue, secondValue);
+                    break;
+                case 5:
+                    Modulo35(firstValue, secondValue);
+                    break;
+                case 6:
+                    Squared35(firstValue);
+                    break;
+                case 7:
+                    Cubed35(firstValue);
+                    break;
+                case 8:
+                    ToThePower35(firstValue, secondValue);
+                    break;
+                default:
+                    Console.WriteLine("");
+                    break;
             }
         }
-
-        static void Multiplication34(double firstValue, double secondValue)
+        static void ToThePower35(double firstValue, double secondValue)
         {
-            Console.WriteLine("2. Mnożenie: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
-        }
-        static double Substraction34(double firstValue, double secondValue)
-        {
-           return firstValue - secondValue;
+            double result = Math.Pow(firstValue, secondValue);
+            Console.WriteLine($" {firstValue} ^ {secondValue} = {result}");
         }
 
-        static double Addition34(double firstValue, double secondValue)
+        static void Cubed35(double firstValue)
         {
-            return firstValue + secondValue;
+            double result = Math.Pow(firstValue, 3);
+            Console.WriteLine($" {firstValue} ^ {3} = {result}");
         }
 
-        static double EnterValue34()
+        static void Squared35(double firstValue)
         {
-            double variableValue = double.Parse(Console.ReadLine());
-            return variableValue;
+            double result = Math.Pow(firstValue,2);
+            Console.WriteLine($" {firstValue} ^ {2} = {result}");
         }
 
+        static void Modulo35(double firstValue, double secondValue)
+        {
+            double result = firstValue % secondValue;
+            Console.WriteLine("Wynik dzielenia z resztą: " +
+                "\n" + firstValue + " % " + secondValue + " = " + result);
+        }
+    static void Division34(double firstValue, double secondValue)
+    {
+        if (secondValue != 0)
+        {
+            Console.WriteLine("2. Dzielenie: " + firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
+        }
+        else
+        {
+            Console.WriteLine("Wprowadziłeś drugą wartość równą zero. A zasada mówi: nie dziel cholero przez zero");
+        }
+    }
+
+    static void Multiplication34(double firstValue, double secondValue)
+    {
+        Console.WriteLine("2. Mnożenie: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
+    }
+    static double Substraction34(double firstValue, double secondValue)
+    {
+        return firstValue - secondValue;
+    }
+
+    static double Addition34(double firstValue, double secondValue)
+    {
+        return firstValue + secondValue;
+    }
+
+    static double EnterValue34()
+    {
+        double variableValue = double.Parse(Console.ReadLine());
+        return variableValue;
+    }
         
         static double EnterSideValue()
         {
