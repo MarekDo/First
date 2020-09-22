@@ -284,7 +284,7 @@ namespace First
                 else if (option == "8")
                 {
                     Console.Clear();
-                    //Lesson3Part8();
+                    Lesson3Part8();
                     Console.ReadKey();
                 }
 
@@ -988,6 +988,122 @@ namespace First
             double valueC = double.Parse(Console.ReadLine());
  
             Delta(valueA, valueB, valueC);
+        }
+
+        static void Lesson3Part8()
+        {
+            /*
+             * Napisz program, który będzie liczył pole i obwód figury. 
+             * Rozwiązując zadanie daj: menu wyboru figury,
+             * możliwość podania długości boków, 
+             * podstaw, 
+             * promienia bądź wysokości w zależności od figury 
+             * wypisz wyniki w konsoli.
+             * Napisz algorytmy dla: kwadratu, prostokąta, trójkąta, trapezu, koła, rombu i równoległoboku.
+             */
+
+            Console.WriteLine("Obliczanie pól i obwodów figur geometrycznych");
+            Console.WriteLine("1. Rozpoczęcie. \n 2. Zakończ");
+            int startStop = int.Parse(Console.ReadLine());
+
+            while (startStop == 1)             
+            {
+                Console.Clear();
+                Console.WriteLine("Wprowadź figurę goemetryczną dla której będą obliczenia:" +
+                    "\n 1 - Kwadrat." +
+                    "\n 2 - Prostokąt." +
+                    "\n 3 - Trójkąt." +
+                    "\n 4 - Trapez." +
+                    "\n 5 - Koło." +
+                    "\n 6 - Romb." +
+                    "\n 7 - Równoległobok" + 
+                    "\n 8 - Zakończ");
+
+                int lokalMenu = int.Parse(Console.ReadLine());
+
+                switch (lokalMenu)
+                {
+                    case 1:                        
+                        Square38();
+                        break;
+                    case 2:
+                        rectangle38();
+                        break;
+                    case 3:
+                        triangle38();
+                        break;
+                    case 4:
+                        Console.WriteLine("Trapez");
+
+                        break;
+                    case 5:
+                        Console.WriteLine("Koło");
+
+                        break;
+                    case 6:
+                        Console.WriteLine("Romb");
+
+                        break;
+                    case 7:
+                        Console.WriteLine("Równoległobok");
+
+                        break;
+                    case 8:
+                        return;
+                    default:
+                        break;
+   
+
+                }
+
+            }
+
+
+        }
+
+        static void triangle38()
+        {
+            Console.WriteLine("Obliczenia dla trójkata - znając długości jego boków:");
+            Console.WriteLine("Podaj warość długości pierwszego boku:");
+            double firstSide = double.Parse(Console.ReadLine());       
+            Console.WriteLine("Podaj warość długości drugiego boku:");
+            double secondSide = double.Parse(Console.ReadLine());     
+            Console.WriteLine("Podaj warość długości trzeciego boku:");
+            double thirdSide = double.Parse(Console.ReadLine());
+            
+            double perimeterOftheSquare = firstSide + secondSide + thirdSide;
+            double halfPerimeterOftheSquare = perimeterOftheSquare / 2;
+            double squareArea = Math.Sqrt(halfPerimeterOftheSquare * (halfPerimeterOftheSquare - firstSide)
+                * (halfPerimeterOftheSquare - secondSide) * (halfPerimeterOftheSquare - thirdSide));
+            Console.WriteLine($"Pole trójkąta wynosi: {squareArea}");
+            Console.WriteLine($"Obwód trójkąta wynosi: {perimeterOftheSquare}");
+            Console.ReadKey();
+        }
+
+        static void rectangle38()
+        {
+            Console.WriteLine("Obliczenia dla prostokąta");
+            Console.WriteLine("Podaj warość długości dłuższego boku:");
+            double longerSide = double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj warość długości krutszego boku:");
+            double shorterSide = double.Parse(Console.ReadLine());
+            double squareArea = longerSide * shorterSide;
+            double perimeterOftheSquare = (longerSide * 2) + (shorterSide * 2);
+            Console.WriteLine($"Pole prostokąta wynosi: {squareArea}");
+            Console.WriteLine($"Obwód prostokąta wynosi: {perimeterOftheSquare}");
+            Console.ReadKey();
+        }
+
+        static void Square38()
+        {
+            Console.WriteLine("Obliczenia dla kwadratu");
+            Console.WriteLine("Podaj warość długości boku:");
+            double sideLength = double.Parse(Console.ReadLine());
+            double squareArea = Math.Pow(sideLength, 2);
+            double perimeterOftheSquare = sideLength * 4;
+            Console.WriteLine($"Pole kwadratu wynosi: {squareArea}") ;
+            Console.WriteLine($"Obwód kwadratu wynosi: {perimeterOftheSquare}");
+            Console.ReadKey();
         }
 
         static void Delta(double valueA, double valueB, double valueC)
