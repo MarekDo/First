@@ -2,6 +2,7 @@
 using System;
 using System.Dynamic;
 using System.Linq.Expressions;
+using System.Runtime.CompilerServices;
 
 namespace First
 {
@@ -277,7 +278,7 @@ namespace First
                 else if (option == "7")
                 {
                     Console.Clear();
-                    //Lesson3Part7();
+                    Lesson3Part7();
                     Console.ReadKey();
                 }
                 else if (option == "8")
@@ -965,6 +966,52 @@ namespace First
 
             Console.WriteLine("Opracować rezygnację z obliczeń");
         }
+
+        static void Lesson3Part7()
+        {
+            /*
+             * Napisz program, który będzie wypisywał pierwiastki równania kwadratowego o postaci
+             * ax2 + bx + c = 0.
+             * niech użytkownik poda wartości liczb a, b i c
+             * sprawdź, czy są pierwiastki, czy są jeden, czy dwa
+             * wypisz rozwiązania równania kwadratowego w konsoli, 
+             * a jeśli takowych brak - stosowny komunikat.
+            */
+            Console.WriteLine("Program do oblicznia pierwiastków równania kwadratowego.");
+            Console.WriteLine("ax2 + bx + c = 0");
+            Console.WriteLine("Wrpowadzasz wartości dla a: b: i c:");
+            Console.WriteLine("Wprowadź wartość a:");
+            double valueA = double.Parse(Console.ReadLine());
+            Console.WriteLine("Wprowadź wartość b:");
+            double valueB = double.Parse(Console.ReadLine());
+            Console.WriteLine("Wprowadź wartość c:");
+            double valueC = double.Parse(Console.ReadLine());
+ 
+            Delta(valueA, valueB, valueC);
+        }
+
+        static void Delta(double valueA, double valueB, double valueC)
+        {
+           
+            double deltaLocal = (Math.Pow(valueB, 2)) - (4 * valueA * valueC);
+
+            if(deltaLocal < 0)
+            {
+                Console.WriteLine("Równanie nie ma pierwiastków.");
+            }
+            else if (deltaLocal == 0)
+            {
+                double lokalX = (-valueB) / (2 * valueA);
+                Console.WriteLine("Występuje jeden pierwiastek: " + lokalX);              
+            }
+            else if(deltaLocal > 0)
+            {
+                double lokalA = (-valueB - (Math.Sqrt(deltaLocal))) / (2 * valueA);
+                double lokalB = (-valueB + (Math.Sqrt(deltaLocal))) / (2 * valueA);
+                Console.WriteLine("Występuja dwa pierwiaski: " + lokalA +" i " + lokalB);
+            }
+        }
+
         static void ToThePower35(double firstValue, double secondValue)
         {
             double result = Math.Pow(firstValue, secondValue);
