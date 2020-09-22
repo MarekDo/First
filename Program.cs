@@ -271,7 +271,7 @@ namespace First
                 else if (option == "6")
                 {
                     Console.Clear();
-                    //Lesson3Part6();
+                    Lesson3Part6();
                     Console.ReadKey();
                 }
                 else if (option == "7")
@@ -955,6 +955,15 @@ namespace First
                     Console.WriteLine("");
                     break;
             }
+        }
+
+        static void Lesson3Part6()
+        {
+            /*
+             * Na rozluźnienie szarych komórek, dodaj do swojego kalkulatora możliwość rezygnacji z obliczeń 
+             */
+
+            Console.WriteLine("Opracować rezygnację z obliczeń");
         }
         static void ToThePower35(double firstValue, double secondValue)
         {
