@@ -338,7 +338,7 @@ namespace First
                 else if (option == "2")
                 {
                     Console.Clear();
-                    //Lesson4Part2();
+                    Lesson4Part2();
                     Console.ReadKey();
                 }
                 else if (option == "3")
@@ -1163,6 +1163,34 @@ namespace First
             {
                 Console.WriteLine(i);
             }
+        }
+
+        static void Lesson4Part2()
+        {
+            /*
+             * Zmodyfikuj poprzedni program tak, żeby tym razem użytkownik mógł wybrać także liczbę początkową. 
+             * Zwróć uwagę, czy wypisane są także liczby graniczne.
+             */
+            Console.WriteLine("Podaj wartość od któtrej ma być zliczanie: ");
+            int startValue = int.Parse(Console.ReadLine());   
+            Console.WriteLine("Podaj wartość do któtrej ma być zliczanie: ");
+            int stopValue = int.Parse(Console.ReadLine());
+
+            if(startValue < stopValue)
+            {
+                for (int i = startValue; i <= stopValue; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nie mozna wykonac operacji, pierwsza wartośc jest większa lub równa od drugiej.");
+            }
+
+
+
+
         }
 
         static void trapeze38()
