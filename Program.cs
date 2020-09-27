@@ -22,7 +22,7 @@ namespace First
             Console.WriteLine("1. Zobacz zadania do lekcji nr 1.");
             Console.WriteLine("2. Zobacz zadania do lekcji nr 2.");
             Console.WriteLine("3. Zobacz zadania do lekcji nr 3.");
-            Console.WriteLine("3. Zobacz zadania do lekcji nr 4.");
+            Console.WriteLine("4. Zobacz zadania do lekcji nr 4.");
             Console.WriteLine("15. Zakończ program.");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
 
@@ -356,7 +356,7 @@ namespace First
                 else if (option == "5")
                 {
                     Console.Clear();
-                    //Lesson4Part5();
+                    Lesson4Part5();
                     Console.ReadKey();
                 }
                 else if (option == "6")
@@ -1194,10 +1194,6 @@ namespace First
             {
                 Console.WriteLine("Nie mozna wykonac operacji, pierwsza wartośc jest większa lub równa od drugiej.");
             }
-
-
-
-
         }
 
         static void Lesson4Part3()
@@ -1245,6 +1241,19 @@ namespace First
             else
             {
                 Console.WriteLine("Nie mozna wykonac operacji, pierwsza wartośc jest mniejsza lub równa od drugiej.");
+            }
+
+        }
+
+        static void Lesson4Part5()
+        {
+            /*
+             * Napisz program, który w konsoli wypisze tabliczkę mnożenia liczb od 1 do 10.
+             */
+            
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("1 * " + i +" = "+ (1*i));
             }
 
         }
