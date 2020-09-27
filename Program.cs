@@ -22,7 +22,7 @@ namespace First
             Console.WriteLine("1. Zobacz zadania do lekcji nr 1.");
             Console.WriteLine("2. Zobacz zadania do lekcji nr 2.");
             Console.WriteLine("3. Zobacz zadania do lekcji nr 3.");
-            Console.WriteLine("3. Zobacz zadania do lekcji nr 4.");
+            Console.WriteLine("4. Zobacz zadania do lekcji nr 4.");
             Console.WriteLine("15. Zakończ program.");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
 
@@ -122,6 +122,7 @@ namespace First
             Console.WriteLine("6. Zadanie nr 6");
             Console.WriteLine("7. Zadanie nr 7");
             Console.WriteLine("8. Zadanie nr 8");
+            Console.WriteLine("9. Zadanie nr 9");
             Console.WriteLine("0. Wyjście");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
@@ -326,13 +327,13 @@ namespace First
 
             while (option != "0")
             {
-                MenuOfLesson3();
+                MenuOfLesson4();
                 option = Console.ReadLine();
 
                 if (option == "1")
                 {
                     Console.Clear();
-                    //Lesson4Part1();
+                    Lesson4Part1();
                     Console.ReadKey();
                 }
                 else if (option == "2")
@@ -1150,6 +1151,20 @@ namespace First
 
         }
 
+        static void Lesson4Part1()
+        {
+            /*
+             * Napisz program, który wypisze liczby od 0 do podanej przez użytkownika.
+             * Pamiętaj o zachowaniu odpowiednich odstępów pomiędzy poszczególnymi liczbami.
+             */
+            Console.WriteLine("Podaj wartość do ilu ma zostac zliczone: ");
+            int value = int.Parse(Console.ReadLine());
+            for(int i = 0; i <= value; i++)
+            {
+                Console.WriteLine(i + ",");
+            }
+        }
+
         static void trapeze38()
         {
             //Zrobić metodę z sprawdzeniem czy można utworzyć trapez - sprawdzić czy z długośći się utworzy
@@ -1199,6 +1214,8 @@ namespace First
             Console.WriteLine($"Obwód kwadratu wynosi: {perimeterOftheSquare}");
             Console.ReadKey();
         }
+
+
 
         static void Delta(double valueA, double valueB, double valueC)
         {
