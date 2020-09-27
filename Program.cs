@@ -350,7 +350,7 @@ namespace First
                 else if (option == "4")
                 {
                     Console.Clear();
-                    //Lesson4Part4();
+                    Lesson4Part4();
                     Console.ReadKey();
                 }
                 else if (option == "5")
@@ -1220,6 +1220,31 @@ namespace First
             else
             {
                 Console.WriteLine("Wprowadzona wartość jest mniejsza od zera lub równa zeru");
+            }
+
+        }
+
+        static void Lesson4Part4()
+        {
+            /*
+             * Przerób poprzedni program tak, żeby odliczał tylko w obrębie zakresu podanego jak w zad. 11.
+             */
+
+            Console.WriteLine("Podaj wartość od któtrej ma być zliczanie: ");
+            int startValue = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj wartość do któtrej ma być zliczanie (mniejsza od pierwszej liczby): ");
+            int stopValue = int.Parse(Console.ReadLine());
+
+            if (startValue > stopValue)
+            {
+                for (int i = startValue; i >= stopValue; i--)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nie mozna wykonac operacji, pierwsza wartośc jest mniejsza lub równa od drugiej.");
             }
 
         }
