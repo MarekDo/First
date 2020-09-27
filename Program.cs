@@ -1157,12 +1157,19 @@ namespace First
              * Pamiętaj o zachowaniu odpowiednich odstępów pomiędzy poszczególnymi liczbami.
              */
 
-            Console.WriteLine("Podaj wartość do któej ma zliczać");
+            Console.WriteLine("Podaj wartość do któej ma zliczać - większą od zera");
             int value = int.Parse(Console.ReadLine());
-            for (int i = 0; i <= value; i++)
+            if (value > 0)
             {
-                Console.WriteLine(i);
+                for (int i = 0; i <= value; i++)
+                {
+                    Console.WriteLine(i);
+                }
             }
+            else {
+                Console.WriteLine("Podana wartość jest mniejsza od 0 lub równa, spróbuj jeszcze raz.");
+            }
+
         }
 
         static void Lesson4Part2()
