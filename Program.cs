@@ -22,6 +22,7 @@ namespace First
             Console.WriteLine("1. Zobacz zadania do lekcji nr 1.");
             Console.WriteLine("2. Zobacz zadania do lekcji nr 2.");
             Console.WriteLine("3. Zobacz zadania do lekcji nr 3.");
+            Console.WriteLine("3. Zobacz zadania do lekcji nr 4.");
             Console.WriteLine("15. Zakończ program.");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
 
@@ -38,6 +39,10 @@ namespace First
             else if (option == "3")
             {
                 LessonNumber_3();
+            }
+            else if (option == "4")
+            {
+                LessonNumber_4();
             }
             else if (option == "15")
             {
@@ -93,6 +98,22 @@ namespace First
         {
             Console.Clear();
             Console.WriteLine("Lekcja 3");
+            Console.WriteLine("1. Zadanie nr 1");
+            Console.WriteLine("2. Zadanie nr 2");
+            Console.WriteLine("3. Zadanie nr 3");
+            Console.WriteLine("4. Zadanie nr 4");
+            Console.WriteLine("5. Zadanie nr 5");
+            Console.WriteLine("6. Zadanie nr 6");
+            Console.WriteLine("7. Zadanie nr 7");
+            Console.WriteLine("8. Zadanie nr 8");
+            Console.WriteLine("0. Wyjście");
+            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+        }
+
+        static void MenuOfLesson4()
+        {
+            Console.Clear();
+            Console.WriteLine("Lekcja 4");
             Console.WriteLine("1. Zadanie nr 1");
             Console.WriteLine("2. Zadanie nr 2");
             Console.WriteLine("3. Zadanie nr 3");
@@ -285,6 +306,75 @@ namespace First
                 {
                     Console.Clear();
                     Lesson3Part8();
+                    Console.ReadKey();
+                }
+
+                else if (option == "9")
+                {
+                    TaskContentLesson_2();
+
+                }
+            }
+            LessonOfService();
+        }
+
+        static void LessonNumber_4()
+        {
+            Console.WriteLine("Wybrales lekcje nr 4");
+            MenuOfLesson();
+            string option = Console.ReadLine();
+
+            while (option != "0")
+            {
+                MenuOfLesson3();
+                option = Console.ReadLine();
+
+                if (option == "1")
+                {
+                    Console.Clear();
+                    //Lesson4Part1();
+                    Console.ReadKey();
+                }
+                else if (option == "2")
+                {
+                    Console.Clear();
+                    //Lesson4Part2();
+                    Console.ReadKey();
+                }
+                else if (option == "3")
+                {
+                    Console.Clear();
+                    //Lesson4Part3();
+                    Console.ReadKey();
+                }
+                else if (option == "4")
+                {
+                    Console.Clear();
+                    //Lesson4Part4();
+                    Console.ReadKey();
+                }
+                else if (option == "5")
+                {
+                    Console.Clear();
+                    //Lesson4Part5();
+                    Console.ReadKey();
+                }
+                else if (option == "6")
+                {
+                    Console.Clear();
+                    //Lesson4Part6();
+                    Console.ReadKey();
+                }
+                else if (option == "7")
+                {
+                    Console.Clear();
+                    //Lesson4Part7();
+                    Console.ReadKey();
+                }
+                else if (option == "8")
+                {
+                    Console.Clear();
+                    //Lesson4Part8();
                     Console.ReadKey();
                 }
 
@@ -1033,8 +1123,7 @@ namespace First
                         triangle38();
                         break;
                     case 4:
-                        Console.WriteLine("Trapez");
-
+                        trapeze38();
                         break;
                     case 5:
                         Console.WriteLine("Koło");
@@ -1059,6 +1148,11 @@ namespace First
             }
 
 
+        }
+
+        static void trapeze38()
+        {
+            //Zrobić metodę z sprawdzeniem czy można utworzyć trapez - sprawdzić czy z długośći się utworzy
         }
 
         static void triangle38()
