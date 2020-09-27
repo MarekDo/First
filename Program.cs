@@ -344,7 +344,7 @@ namespace First
                 else if (option == "3")
                 {
                     Console.Clear();
-                    //Lesson4Part3();
+                    Lesson4Part3();
                     Console.ReadKey();
                 }
                 else if (option == "4")
@@ -1197,6 +1197,30 @@ namespace First
 
 
 
+
+        }
+
+        static void Lesson4Part3()
+        {
+            /*
+             * Zmodyfikuj program z zad. 1. tak, żeby zamiast wypisywać liczby od 0, 
+             * zaczął odliczać od liczby podanej przez użytkownika do zera.
+             */
+
+            Console.WriteLine("Podaj wartość od której ma zliczać do 0");
+            int value = int.Parse(Console.ReadLine());
+            
+            if(value > 0)
+            {
+                for (int i = value; i >= 0; i--)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Wprowadzona wartość jest mniejsza od zera lub równa zeru");
+            }
 
         }
 
