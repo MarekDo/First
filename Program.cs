@@ -326,13 +326,13 @@ namespace First
 
             while (option != "0")
             {
-                MenuOfLesson3();
+                MenuOfLesson4();
                 option = Console.ReadLine();
 
                 if (option == "1")
                 {
                     Console.Clear();
-                    //Lesson4Part1();
+                    Lesson4Part1();
                     Console.ReadKey();
                 }
                 else if (option == "2")
@@ -1148,6 +1148,21 @@ namespace First
             }
 
 
+        }
+
+        static void Lesson4Part1()
+        {
+            /*
+             * Napisz program, który wypisze liczby od 0 do podanej przez użytkownika. 
+             * Pamiętaj o zachowaniu odpowiednich odstępów pomiędzy poszczególnymi liczbami.
+             */
+
+            Console.WriteLine("Podaj wartość do któej ma zliczać");
+            int value = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= value; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         static void trapeze38()
