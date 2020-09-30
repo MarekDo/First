@@ -398,6 +398,54 @@ namespace First
                     Console.Clear();
                     //Lesson4Part10();
                     Console.ReadKey();
+                } 
+                else if (option == "11")
+                {
+                    Console.Clear();
+                    //Lesson4Part11();
+                    Console.ReadKey();
+                } 
+                else if (option == "12")
+                {
+                    Console.Clear();
+                    //Lesson4Part12();
+                    Console.ReadKey();
+                }         
+                else if (option == "13")
+                {
+                    Console.Clear();
+                    //Lesson4Part13();
+                    Console.ReadKey();
+                }    
+                else if (option == "14")
+                {
+                    Console.Clear();
+                    //Lesson4Part14();
+                    Console.ReadKey();
+                }             
+                else if (option == "15")
+                {
+                    Console.Clear();
+                    //Lesson4Part15();
+                    Console.ReadKey();
+                }       
+                else if (option == "16")
+                {
+                    Console.Clear();
+                    //Lesson4Part16();
+                    Console.ReadKey();
+                } 
+                else if (option == "17")
+                {
+                    Console.Clear();
+                    //Lesson4Part17();
+                    Console.ReadKey();
+                }         
+                else if (option == "18")
+                {
+                    Console.Clear();
+                    //Lesson4Part18();
+                    Console.ReadKey();
                 }
 
                 else if (option == "9")
