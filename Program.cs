@@ -374,7 +374,19 @@ namespace First
                 else if (option == "8")
                 {
                     Console.Clear();
-                    //Lesson4Part8();
+                    Lesson4Part8();
+                    Console.ReadKey();
+                }
+                else if (option == "9")
+                {
+                    Console.Clear();
+                    //Lesson4Part9();
+                    Console.ReadKey();
+                }    
+                else if (option == "10")
+                {
+                    Console.Clear();
+                    //Lesson4Part10();
                     Console.ReadKey();
                 }
 
@@ -1289,6 +1301,23 @@ namespace First
                     Console.WriteLine(i);
                 }
             }
+        }
+
+        static void Lesson4Part8()
+        {
+            /*
+             * Napisz program, który wypisze w konsoli tylko liczby nieparzyste z zakresu od 0 do 100.
+             */
+
+            Console.WriteLine("Liczby nieparzyste od 0 do 100");
+            for(int i = 0; i <= 100; i++)
+            {
+                if((i % 2) != 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
         }
 
         static void trapeze38()
