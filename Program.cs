@@ -122,7 +122,17 @@ namespace First
             Console.WriteLine("6. Zadanie nr 6");
             Console.WriteLine("7. Zadanie nr 7");
             Console.WriteLine("8. Zadanie nr 8");
-            Console.WriteLine("0. Wyjście");
+            Console.WriteLine("9. Zadanie nr 9");
+            Console.WriteLine("10. Zadanie nr 10");
+            Console.WriteLine("11. Zadanie nr 11");
+            Console.WriteLine("12. Zadanie nr 12");
+            Console.WriteLine("13. Zadanie nr 13");
+            Console.WriteLine("14. Zadanie nr 14");
+            Console.WriteLine("15. Zadanie nr 15");
+            Console.WriteLine("16. Zadanie nr 16");
+            Console.WriteLine("17. Zadanie nr 17");
+            Console.WriteLine("18. Zadanie nr 18");
+
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
 
@@ -380,7 +390,7 @@ namespace First
                 else if (option == "9")
                 {
                     Console.Clear();
-                    //Lesson4Part9();
+                    Lesson4Part9();
                     Console.ReadKey();
                 }    
                 else if (option == "10")
@@ -1317,6 +1327,43 @@ namespace First
                     Console.WriteLine(i);
                 }
             }
+
+        }
+
+        static void Lesson4Part9()
+        {
+            /*
+             * Napisz program, w którym użytkownik będzie mógł wybrać, czy chce wypisać liczby parzyste, 
+             * czy nieparzyste, z zakresu podanego przez użytkownika. 
+             */
+            Console.WriteLine("Programik do wypisywania liczb parzystych lub nieparzystych");
+            Console.WriteLine("Wpisz: p jeśli chcesz liczby parzyste lub wpisz: n jeśli mają byc to nieparzyste");
+            string value = Console.ReadLine();
+            if(value == "n")
+            {
+                for (int i = 0; i <= 100; i++)
+                {
+                    if ((i % 2) != 0)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+            else if(value == "p")
+            {
+                for(int i = 0; i <= 100; i++)
+                {
+                    if((i % 2) == 0)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Miałeś wcisnąć n lub p. Żle wybrałeś zaczynasz jeszcze raz");
+            }
+
 
         }
 
