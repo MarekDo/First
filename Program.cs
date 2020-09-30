@@ -368,7 +368,7 @@ namespace First
                 else if (option == "7")
                 {
                     Console.Clear();
-                    //Lesson4Part7();
+                    Lesson4Part7();
                     Console.ReadKey();
                 }
                 else if (option == "8")
@@ -1271,6 +1271,23 @@ namespace First
             for (int i = 1; i <= value; i++)
             {
                 Console.WriteLine("1 * " + i + " = " + (1*i) );
+            }
+        }
+
+        static void Lesson4Part7()
+        {
+            /*
+             * Napisz program, który wypisze w konsoli tylko liczby parzyste z zakresu od 0 do 100.
+             */
+            Console.WriteLine("tylko liczby parzyste do 100 ");
+
+            for(int i = 0; i <= 100; i++)
+            {
+
+                if((i % 2) == 0)
+                {
+                    Console.WriteLine(i);
+                }
             }
         }
 
