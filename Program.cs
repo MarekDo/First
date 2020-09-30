@@ -362,7 +362,7 @@ namespace First
                 else if (option == "6")
                 {
                     Console.Clear();
-                    //Lesson4Part6();
+                    Lesson4Part6();
                     Console.ReadKey();
                 }
                 else if (option == "7")
@@ -1256,6 +1256,22 @@ namespace First
                 Console.WriteLine("1 * " + i +" = "+ (1*i));
             }
 
+        }
+
+        static void Lesson4Part6()
+        {
+            /*
+             * Napisz program, który będzie wypisywał w konsoli tabliczkę mnożenia liczb od 1 do liczby podanej przez użytkownika.
+             */
+
+            Console.WriteLine("Wypisanie tabliczki mnożenia od 1 do wartości podanej: ");
+            Console.WriteLine("Wpisz liczbę całkowitą: ");
+            int value = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= value; i++)
+            {
+                Console.WriteLine("1 * " + i + " = " + (1*i) );
+            }
         }
 
         static void trapeze38()
