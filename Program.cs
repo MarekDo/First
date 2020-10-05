@@ -132,6 +132,7 @@ namespace First
             Console.WriteLine("16. Zadanie nr 16");
             Console.WriteLine("17. Zadanie nr 17");
             Console.WriteLine("18. Zadanie nr 18");
+            Console.WriteLine("0. Wyjście");
 
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
@@ -396,7 +397,7 @@ namespace First
                 else if (option == "10")
                 {
                     Console.Clear();
-                    //Lesson4Part10();
+                    Lesson4Part10();
                     Console.ReadKey();
                 } 
                 else if (option == "11")
@@ -448,10 +449,10 @@ namespace First
                     Console.ReadKey();
                 }
 
-                else if (option == "9")
+                else if (option == "19")
                 {
-                    TaskContentLesson_2();
-
+                    //TaskContentLesson_4();
+                    // Wypisanie wszystkich lekcji
                 }
             }
             LessonOfService();
@@ -1413,6 +1414,52 @@ namespace First
             }
 
 
+        }
+
+        static void Lesson4Part10()
+        {
+            /*
+             * Napisz program, który będzie wypisywał liczby podzielne przez 2, 3, 4, 5, 7, 9 z podanego zakresu. 
+             * Pamiętaj, żeby oddzielić poszczególne działania.
+             */
+
+            Console.WriteLine("Wypisanie liczb podzielnych przez 2, 3, 4, 5, 7, 9 z podanego zakresu.");
+            Console.WriteLine("Podaj pierwszą liczbę całkowitą zakresu:");
+            int firstValue = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj ostatnia liczbę całkowitą zakresu:");
+            int lastValue = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Zakres: od {firstValue} do {lastValue}");
+
+            for (int i = firstValue; i <= lastValue; i++)
+            {
+
+                    if ((i % 2) == 0) 
+                    {
+                        Console.WriteLine(i + " jest podzilene przez 2");
+                    }
+                    if ((i % 3) == 0)
+                    {
+                        Console.WriteLine(i + " jest podzilene przez 3");
+                    }
+                    if ((i % 4) == 0)
+                    {
+                        Console.WriteLine(i + " jest podzilene przez 4");
+                    }
+                    if ((i % 5) == 0)
+                    {
+                        Console.WriteLine(i + " jest podzilene przez 5");
+                    }
+                    if ((i % 7) == 0)
+                    {
+                        Console.WriteLine(i + " jest podzilene przez 7");
+                    }
+                    if ((i % 9) == 0)
+                    {
+                        Console.WriteLine(i + " jest podzilene przez 9");
+                    }
+                
+
+            }
         }
 
         static void trapeze38()
