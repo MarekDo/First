@@ -403,7 +403,7 @@ namespace First
                 else if (option == "11")
                 {
                     Console.Clear();
-                    //Lesson4Part11();
+                    Lesson4Part11();
                     Console.ReadKey();
                 } 
                 else if (option == "12")
@@ -1458,6 +1458,31 @@ namespace First
                         Console.WriteLine(i + " jest podzilene przez 9");
                     }
                 
+
+            }
+        }
+
+        static void Lesson4Part11()
+        {
+            /*
+             * Zmodyfikuj poprzedni program tak, żeby użytkownik mógł wybrać, który dzielnik chce wybrać.
+             */
+            Console.WriteLine("Wypisanie liczb podzielnych przez 2, 3, 4, 5, 7, 9 z podanego zakresu.");
+            Console.WriteLine("Wpisz podzielnik 2 lub 3 lub 4 lub 5 lub 7 lub 9 dla niżej wskazanego przez siebie zakresu");
+            int divisor = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj pierwszą liczbę całkowitą zakresu:");
+            int firstValue = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj ostatnia liczbę całkowitą zakresu:");
+            int lastValue = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Zakres: od {firstValue} do {lastValue}");
+
+            for (int i = firstValue; i <= lastValue; i++)
+            {
+
+                if ((i % divisor) == 0)
+                {
+                    Console.WriteLine($"{i} jest podzilene przez {divisor}");
+                }
 
             }
         }
