@@ -393,55 +393,55 @@ namespace First
                     Console.Clear();
                     Lesson4Part9();
                     Console.ReadKey();
-                }    
+                }
                 else if (option == "10")
                 {
                     Console.Clear();
                     Lesson4Part10();
                     Console.ReadKey();
-                } 
+                }
                 else if (option == "11")
                 {
                     Console.Clear();
                     Lesson4Part11();
                     Console.ReadKey();
-                } 
+                }
                 else if (option == "12")
                 {
                     Console.Clear();
-                    //Lesson4Part12();
+                    Lesson4Part12();
                     Console.ReadKey();
-                }         
+                }
                 else if (option == "13")
                 {
                     Console.Clear();
                     //Lesson4Part13();
                     Console.ReadKey();
-                }    
+                }
                 else if (option == "14")
                 {
                     Console.Clear();
                     //Lesson4Part14();
                     Console.ReadKey();
-                }             
+                }
                 else if (option == "15")
                 {
                     Console.Clear();
                     //Lesson4Part15();
                     Console.ReadKey();
-                }       
+                }
                 else if (option == "16")
                 {
                     Console.Clear();
                     //Lesson4Part16();
                     Console.ReadKey();
-                } 
+                }
                 else if (option == "17")
                 {
                     Console.Clear();
                     //Lesson4Part17();
                     Console.ReadKey();
-                }         
+                }
                 else if (option == "18")
                 {
                     Console.Clear();
@@ -1147,7 +1147,7 @@ namespace First
             double valueB = double.Parse(Console.ReadLine());
             Console.WriteLine("Wprowadź wartość c:");
             double valueC = double.Parse(Console.ReadLine());
- 
+
             Delta(valueA, valueB, valueC);
         }
 
@@ -1167,7 +1167,7 @@ namespace First
             Console.WriteLine("1. Rozpoczęcie. \n 2. Zakończ");
             int startStop = int.Parse(Console.ReadLine());
 
-            while (startStop == 1)             
+            while (startStop == 1)
             {
                 Console.Clear();
                 Console.WriteLine("Wprowadź figurę goemetryczną dla której będą obliczenia:" +
@@ -1177,14 +1177,14 @@ namespace First
                     "\n 4 - Trapez." +
                     "\n 5 - Koło." +
                     "\n 6 - Romb." +
-                    "\n 7 - Równoległobok" + 
+                    "\n 7 - Równoległobok" +
                     "\n 8 - Zakończ");
 
                 int lokalMenu = int.Parse(Console.ReadLine());
 
                 switch (lokalMenu)
                 {
-                    case 1:                        
+                    case 1:
                         Square38();
                         break;
                     case 2:
@@ -1212,7 +1212,7 @@ namespace First
                         return;
                     default:
                         break;
-   
+
 
                 }
 
@@ -1250,11 +1250,11 @@ namespace First
              * Zwróć uwagę, czy wypisane są także liczby graniczne.
              */
             Console.WriteLine("Podaj wartość od któtrej ma być zliczanie: ");
-            int startValue = int.Parse(Console.ReadLine());   
+            int startValue = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj wartość do któtrej ma być zliczanie: ");
             int stopValue = int.Parse(Console.ReadLine());
 
-            if(startValue < stopValue)
+            if (startValue < stopValue)
             {
                 for (int i = startValue; i <= stopValue; i++)
                 {
@@ -1276,8 +1276,8 @@ namespace First
 
             Console.WriteLine("Podaj wartość od której ma zliczać do 0");
             int value = int.Parse(Console.ReadLine());
-            
-            if(value > 0)
+
+            if (value > 0)
             {
                 for (int i = value; i >= 0; i--)
                 {
@@ -1321,10 +1321,10 @@ namespace First
             /*
              * Napisz program, który w konsoli wypisze tabliczkę mnożenia liczb od 1 do 10.
              */
-            
+
             for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine("1 * " + i +" = "+ (1*i));
+                Console.WriteLine("1 * " + i + " = " + (1 * i));
             }
 
         }
@@ -1341,7 +1341,7 @@ namespace First
 
             for (int i = 1; i <= value; i++)
             {
-                Console.WriteLine("1 * " + i + " = " + (1*i) );
+                Console.WriteLine("1 * " + i + " = " + (1 * i));
             }
         }
 
@@ -1352,10 +1352,10 @@ namespace First
              */
             Console.WriteLine("tylko liczby parzyste do 100 ");
 
-            for(int i = 0; i <= 100; i++)
+            for (int i = 0; i <= 100; i++)
             {
 
-                if((i % 2) == 0)
+                if ((i % 2) == 0)
                 {
                     Console.WriteLine(i);
                 }
@@ -1369,9 +1369,9 @@ namespace First
              */
 
             Console.WriteLine("Liczby nieparzyste od 0 do 100");
-            for(int i = 0; i <= 100; i++)
+            for (int i = 0; i <= 100; i++)
             {
-                if((i % 2) != 0)
+                if ((i % 2) != 0)
                 {
                     Console.WriteLine(i);
                 }
@@ -1388,7 +1388,7 @@ namespace First
             Console.WriteLine("Programik do wypisywania liczb parzystych lub nieparzystych");
             Console.WriteLine("Wpisz: p jeśli chcesz liczby parzyste lub wpisz: n jeśli mają byc to nieparzyste");
             string value = Console.ReadLine();
-            if(value == "n")
+            if (value == "n")
             {
                 for (int i = 0; i <= 100; i++)
                 {
@@ -1398,11 +1398,11 @@ namespace First
                     }
                 }
             }
-            else if(value == "p")
+            else if (value == "p")
             {
-                for(int i = 0; i <= 100; i++)
+                for (int i = 0; i <= 100; i++)
                 {
-                    if((i % 2) == 0)
+                    if ((i % 2) == 0)
                     {
                         Console.WriteLine(i);
                     }
@@ -1433,31 +1433,31 @@ namespace First
             for (int i = firstValue; i <= lastValue; i++)
             {
 
-                    if ((i % 2) == 0) 
-                    {
-                        Console.WriteLine(i + " jest podzilene przez 2");
-                    }
-                    if ((i % 3) == 0)
-                    {
-                        Console.WriteLine(i + " jest podzilene przez 3");
-                    }
-                    if ((i % 4) == 0)
-                    {
-                        Console.WriteLine(i + " jest podzilene przez 4");
-                    }
-                    if ((i % 5) == 0)
-                    {
-                        Console.WriteLine(i + " jest podzilene przez 5");
-                    }
-                    if ((i % 7) == 0)
-                    {
-                        Console.WriteLine(i + " jest podzilene przez 7");
-                    }
-                    if ((i % 9) == 0)
-                    {
-                        Console.WriteLine(i + " jest podzilene przez 9");
-                    }
-                
+                if ((i % 2) == 0)
+                {
+                    Console.WriteLine(i + " jest podzilene przez 2");
+                }
+                if ((i % 3) == 0)
+                {
+                    Console.WriteLine(i + " jest podzilene przez 3");
+                }
+                if ((i % 4) == 0)
+                {
+                    Console.WriteLine(i + " jest podzilene przez 4");
+                }
+                if ((i % 5) == 0)
+                {
+                    Console.WriteLine(i + " jest podzilene przez 5");
+                }
+                if ((i % 7) == 0)
+                {
+                    Console.WriteLine(i + " jest podzilene przez 7");
+                }
+                if ((i % 9) == 0)
+                {
+                    Console.WriteLine(i + " jest podzilene przez 9");
+                }
+
 
             }
         }
@@ -1485,6 +1485,31 @@ namespace First
                 }
 
             }
+        }
+
+        static void Lesson4Part12()
+        {
+            /*
+             * Napisz program, który będzie wypisywał wszystkie liczby pierwsze z przedziału od 0 do liczby podanej przez użytkownika.
+             */
+            Console.WriteLine("Podaj liczbę większą od zero a podam Ci wszystkie liczby pierwsze");
+            Console.WriteLine("Podaj ostatnia liczbę całkowitą zakresu:");
+            int lastValue = int.Parse(Console.ReadLine());
+
+            if (lastValue <= 0)
+            {
+                Console.WriteLine("Miałes podac wartość całkowitą wiekszą od zero !!!");
+                return; 
+            }
+
+            for(int i = 1; i <= lastValue; i++)
+            {
+                if ( i % i == 0)
+                {
+                    
+                }
+            }
+
         }
 
         static void trapeze38()
