@@ -1499,23 +1499,29 @@ namespace First
             if (lastValue <= 0)
             {
                 Console.WriteLine("Miałes podac wartość całkowitą wiekszą od zero !!!");
-                return; 
+                return;
             }
+            Console.WriteLine($"Liczby pierwsze z przedziału od 0 do {lastValue} to: ");
 
-            for(int i = 1; i <= lastValue; i++)
+            for (int i = 2; i <= lastValue; i++)
             {
-                if ( i % i == 0)
+                for (int j = 2; j <= Math.Sqrt(i); j++)
                 {
-                    
+                    if(i % j == 0)
+                    {
+                        Console.WriteLine(".");
+                    }
                 }
+                Console.Write(i + " ");
             }
-
-        }
+           
+        } 
+         
 
         static void trapeze38()
-        {
-            //Zrobić metodę z sprawdzeniem czy można utworzyć trapez - sprawdzić czy z długośći się utworzy
-        }
+         {
+        //Zrobić metodę z sprawdzeniem czy można utworzyć trapez - sprawdzić czy z długośći się utworzy
+         }
 
         static void triangle38()
         {
