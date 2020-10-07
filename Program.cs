@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using System;
+using System.ComponentModel.Design.Serialization;
 using System.Dynamic;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
@@ -1494,30 +1495,40 @@ namespace First
              */
             Console.WriteLine("Podaj liczbę większą od zero a podam Ci wszystkie liczby pierwsze");
             Console.WriteLine("Podaj ostatnia liczbę całkowitą zakresu:");
-            int lastValue = int.Parse(Console.ReadLine());
+            int rangeOfNumbers = int.Parse(Console.ReadLine());
+            int root = (int)Math.Sqrt(rangeOfNumbers);
 
-            if (lastValue <= 0)
+            for(int primeNumber = 0; primeNumber <= rangeOfNumbers; primeNumber++)
             {
-                Console.WriteLine("Miałes podac wartość całkowitą wiekszą od zero !!!");
-                return;
-            }
-            Console.WriteLine($"Liczby pierwsze z przedziału od 0 do {lastValue} to: ");
-
-            for (int i = 2; i <= lastValue; i++)
-            {
-                for (int j = 2; j <= Math.Sqrt(i); j++)
+                if ((primeNumber > 2) && (primeNumber % 2 == 0))
                 {
-                    if(i % j == 0)
-                    {
-                        Console.WriteLine(".");
-                    }
+                    continue;
                 }
-                Console.Write(i + " ");
-            }
-           
-        } 
-         
+                if(primeNumber <= 3)
+                {
+                    Console.Write(primeNumber + " ");
+                    continue;
+                }
+                //czyli jest nieparzyste zatem:
+                //wyszukuję dzielnik - pokolei
+                //pierwszy dzielnik 3 bo - nieparzysta przez 2 bez sensu
+                bool spr = true;
+                for(int divider = 3; divider <= root; divider++)
+                {
+                    if(primeNumber % divider == 0)
+                    {
+                        spr = false;
+                        continue;
+                    }
 
+                }
+                if (spr) 
+                {
+                    Console.Write(primeNumber + " ");
+                }
+            }
+
+        }
         static void trapeze38()
          {
         //Zrobić metodę z sprawdzeniem czy można utworzyć trapez - sprawdzić czy z długośći się utworzy
