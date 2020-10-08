@@ -1498,36 +1498,6 @@ namespace First
             int rangeOfNumbers = int.Parse(Console.ReadLine());
             int root = (int)Math.Sqrt(rangeOfNumbers);
 
-            for(int primeNumber = 0; primeNumber <= rangeOfNumbers; primeNumber++)
-            {
-                if ((primeNumber > 2) && (primeNumber % 2 == 0))
-                {
-                    continue;
-                }
-                if(primeNumber <= 3)
-                {
-                    Console.Write(primeNumber + " ");
-                    continue;
-                }
-                //czyli jest nieparzyste zatem:
-                //wyszukuję dzielnik - pokolei
-                //pierwszy dzielnik 3 bo - nieparzysta przez 2 bez sensu
-                bool spr = true;
-                for(int divider = 3; divider <= root; divider++)
-                {
-                    if(primeNumber % divider == 0)
-                    {
-                        spr = false;
-                        continue;
-                    }
-
-                }
-                if (spr) 
-                {
-                    Console.Write(primeNumber + " ");
-                }
-            }
-
         }
         static void trapeze38()
          {
