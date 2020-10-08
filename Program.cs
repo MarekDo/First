@@ -434,7 +434,7 @@ namespace First
                 else if (option == "16")
                 {
                     Console.Clear();
-                    //Lesson4Part16();
+                    Lesson4Part16();
                     Console.ReadKey();
                 }
                 else if (option == "17")
@@ -1549,6 +1549,40 @@ namespace First
             }
 
         }
+
+        static void Lesson4Part16()
+        {
+            /*
+             * Zmodyfikuj poprzedni program tak, żeby rysował prostokąt o podanej długości boków.
+             */
+
+            Console.WriteLine("Podaj wysokość prostokąta ");
+            int heightOfTheRectangle = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj szerokość prostokąta ");
+            int widthOfTheRectangle = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < heightOfTheRectangle; i++)
+            {
+                for (int j = 0; j < widthOfTheRectangle; j++)
+                {
+                    if ((i == 0) || (i == heightOfTheRectangle - 1))
+                    {
+                        Console.Write("* ");
+                    }
+                    else
+                        if ((j == 0) || (j == widthOfTheRectangle - 1))
+                    {
+                        Console.Write("* ");
+                    }
+                    else
+                        Console.Write("  ");//wypełnienie środka prostokąta
+
+                }
+                Console.WriteLine();
+            }
+
+        }
+
         static void trapeze38()
          {
         //Zrobić metodę z sprawdzeniem czy można utworzyć trapez - sprawdzić czy z długośći się utworzy
