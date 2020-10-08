@@ -422,7 +422,7 @@ namespace First
                 else if (option == "14")
                 {
                     Console.Clear();
-                    //Lesson4Part14();
+                    Lesson4Part14();
                     Console.ReadKey();
                 }
                 else if (option == "15")
@@ -1505,6 +1505,27 @@ namespace First
             /*
              * Zmodyfikuj poprzedni program tak, żeby użytkownik mógł podać zakres liczb.
              */
+
+
+        }
+
+        static void Lesson4Part14()
+        {
+            /*
+             * Zmodyfikuj program Kalkulator tak, żeby po zakończeniu obliczeń pytał użytkownika, 
+             * czy chce kontynuować obliczenia bez wychodzenia z programu. 
+             * Użytkownik za każdym razem ma podawać liczby, na których chce działać i wybrać działanie.
+             */
+        }
+
+        static void Lesson4Part15(){
+            /*
+             * Napisz program, który będzie w konsoli za pomocą gwiazdek (*) 
+             * rysował kwadrat o długości boku podanej przez użytkownika (długość boku = ilość gwiazdek). 
+             * Pamiętaj o dodaniu odpowiednich odstępów pomiędzy gwiazdkami.
+             * */
+
+
 
 
         }
