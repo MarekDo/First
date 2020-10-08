@@ -416,7 +416,7 @@ namespace First
                 else if (option == "13")
                 {
                     Console.Clear();
-                    //Lesson4Part13();
+                    Lesson4Part13();
                     Console.ReadKey();
                 }
                 else if (option == "14")
@@ -1497,6 +1497,15 @@ namespace First
             Console.WriteLine("Podaj ostatnia liczbę całkowitą zakresu:");
             int rangeOfNumbers = int.Parse(Console.ReadLine());
             int root = (int)Math.Sqrt(rangeOfNumbers);
+
+        }
+
+        static void Lesson4Part13()
+        {
+            /*
+             * Zmodyfikuj poprzedni program tak, żeby użytkownik mógł podać zakres liczb.
+             */
+
 
         }
         static void trapeze38()
