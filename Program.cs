@@ -428,7 +428,7 @@ namespace First
                 else if (option == "15")
                 {
                     Console.Clear();
-                    //Lesson4Part15();
+                    Lesson4Part15();
                     Console.ReadKey();
                 }
                 else if (option == "16")
@@ -1518,15 +1518,35 @@ namespace First
              */
         }
 
-        static void Lesson4Part15(){
+        static void Lesson4Part15() {
             /*
              * Napisz program, który będzie w konsoli za pomocą gwiazdek (*) 
              * rysował kwadrat o długości boku podanej przez użytkownika (długość boku = ilość gwiazdek). 
              * Pamiętaj o dodaniu odpowiednich odstępów pomiędzy gwiazdkami.
              * */
 
+            Console.WriteLine("Podaj długość boku");
+            int lenghtSquare = int.Parse(Console.ReadLine());
 
+            for (int i = 0; i < lenghtSquare; i++)
+            {
+                for (int j = 0; j < lenghtSquare; j++)
+                {
+                    if ((i == 0) || (i == lenghtSquare - 1))
+                    {
+                        Console.Write("* ");
+                    }
+                    else
+                        if ((j == 0) || (j == lenghtSquare - 1))
+                        {
+                        Console.Write("* ");
+                        }
+                    else
+                        Console.Write("  ");//wypełnienie środka kwadratu
 
+                }
+                Console.WriteLine();
+            }
 
         }
         static void trapeze38()
