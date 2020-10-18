@@ -4,7 +4,7 @@ using System.Text;
 
 namespace First.Menus
 {
-    class MenuOfLessonThree
+    public class MenuOfLessonThree
     {
         public void PrintOnScreenMainMenu()
         {

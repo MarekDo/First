@@ -4,7 +4,7 @@ using System.Text;
 
 namespace First.TasksList
 {
-    class ListOfTasksForLessonFour
+    public class ListOfTasksForLessonFour
     {
         public void PrintLessonFourTasks()
         {

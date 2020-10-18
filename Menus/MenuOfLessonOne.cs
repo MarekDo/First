@@ -13,8 +13,8 @@ namespace First.Menus
             menuOne.Add("2. Zadanie nr 2");
             menuOne.Add("3. Zadanie nr 3");
             menuOne.Add("4. Zadanie nr 4");
-            menuOne.Add("5.Teskt poszczególnych zadań");
-            menuOne.Add("0.Wyjście");
+            menuOne.Add("5. Teskt poszczególnych zadań");
+            menuOne.Add("0. Wyjście");
 
 
             Console.Clear();
