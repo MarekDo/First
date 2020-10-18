@@ -50,17 +50,6 @@ namespace First
             }
         }
 
-        static void MenuOfLesson()
-        {
-
-            Console.Clear();
-            Console.WriteLine("Menu:");
-            Console.WriteLine("1. Rozwiązania zadań.");
-            Console.WriteLine("2. Treści wszytskich zadań");
-            Console.WriteLine("0. Wyjdź wyżej.");
-            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
-        }
-
         static void MenuOfLessonNr1()
         {
             MenuOfLessonOne menuOfLessonOne = new MenuOfLessonOne();
