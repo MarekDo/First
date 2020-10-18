@@ -1,4 +1,5 @@
 ﻿
+using First.Menus;
 using First.TasksList;
 using Microsoft.Win32.SafeHandles;
 using System;
@@ -20,14 +21,8 @@ namespace First
         static void LessonOfService()
         {
             Console.Clear();
-            Console.WriteLine("Lekcje C#");
-            Console.WriteLine("Podaj nr lekcji");
-            Console.WriteLine("1. Lekcja nr 1.");
-            Console.WriteLine("2. Lekcja nr 2.");
-            Console.WriteLine("3. Lekcja nr 3.");
-            Console.WriteLine("4. Lekcja nr 4.");
-            Console.WriteLine("15. Zakończ program.");
-            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.PrintOnScreenMainMenu();
 
             string option = Console.ReadLine();
 
