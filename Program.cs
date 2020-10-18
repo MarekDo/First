@@ -255,7 +255,8 @@ namespace First
 
                 else if (option == "0")
                 {
-                    TaskContentLesson_2();
+                    ListOfTasksForLessonTwo listOfTasksForLessonTwo = new ListOfTasksForLessonTwo();
+                    listOfTasksForLessonTwo.PrintLessonTwoTasks();
 
                 }
             }
