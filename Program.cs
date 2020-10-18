@@ -1,4 +1,5 @@
-﻿using First.ToDoList;
+﻿
+using First.TasksList;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.ComponentModel.Design.Serialization;
@@ -21,10 +22,10 @@ namespace First
             Console.Clear();
             Console.WriteLine("Lekcje C#");
             Console.WriteLine("Podaj nr lekcji");
-            Console.WriteLine("1. Zobacz zadania do lekcji nr 1.");
-            Console.WriteLine("2. Zobacz zadania do lekcji nr 2.");
-            Console.WriteLine("3. Zobacz zadania do lekcji nr 3.");
-            Console.WriteLine("4. Zobacz zadania do lekcji nr 4.");
+            Console.WriteLine("1. Lekcja nr 1.");
+            Console.WriteLine("2. Lekcja nr 2.");
+            Console.WriteLine("3. Lekcja nr 3.");
+            Console.WriteLine("4. Lekcja nr 4.");
             Console.WriteLine("15. Zakończ program.");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
 
@@ -52,9 +53,6 @@ namespace First
                 Console.WriteLine("Dziękuję za udział i do zobaczenia:");
                 return;
             }
-
-
-
         }
 
         static void MenuOfLesson()
@@ -76,6 +74,7 @@ namespace First
             Console.WriteLine("2. Zadanie nr 2");
             Console.WriteLine("3. Zadanie nr 3");
             Console.WriteLine("4. Zadanie nr 4");
+            Console.WriteLine("5. Teskt poszczególnych zadań");
             Console.WriteLine("0. Wyjście");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
@@ -92,6 +91,7 @@ namespace First
             Console.WriteLine("6. Zadanie nr 6");
             Console.WriteLine("7. Zadanie nr 7");
             Console.WriteLine("8. Zadanie nr 8");
+            Console.WriteLine("9. Teskt poszczególnych zadań");
             Console.WriteLine("0. Wyjście");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
@@ -108,6 +108,7 @@ namespace First
             Console.WriteLine("6. Zadanie nr 6");
             Console.WriteLine("7. Zadanie nr 7");
             Console.WriteLine("8. Zadanie nr 8");
+            Console.WriteLine("9. Teskt poszczególnych zadań");
             Console.WriteLine("0. Wyjście");
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
         }
@@ -134,6 +135,7 @@ namespace First
             Console.WriteLine("16. Zadanie nr 16");
             Console.WriteLine("17. Zadanie nr 17");
             Console.WriteLine("18. Zadanie nr 18");
+            Console.WriteLine("19. Teskt poszczególnych zadań");
             Console.WriteLine("0. Wyjście");
 
             Console.WriteLine("Wprowadzony nr zatwierdź enterem");
@@ -142,7 +144,7 @@ namespace First
         static void LessonNumber_1()
         {
             Console.WriteLine("Wybrales lekcje nr 1");
-            MenuOfLesson();
+            Console.WriteLine("Wciśnij dowolny klawisz ...");
             string option = Console.ReadLine();
 
             while (option != "0")
@@ -196,7 +198,7 @@ namespace First
         static void LessonNumber_2()
         {
             Console.WriteLine("Wybrales lekcje nr 2");
-            MenuOfLesson();
+            Console.WriteLine("Press any key...");
             string option = Console.ReadLine();
 
             while (option != "0")
@@ -253,11 +255,11 @@ namespace First
                     Console.ReadKey();
                 }
 
-                else if (option == "0")
+                else if (option == "9")
                 {
                     ListOfTasksForLessonTwo listOfTasksForLessonTwo = new ListOfTasksForLessonTwo();
                     listOfTasksForLessonTwo.PrintLessonTwoTasks();
-
+                    
                 }
             }
             LessonOfService();
@@ -266,7 +268,7 @@ namespace First
         static void LessonNumber_3()
         {
             Console.WriteLine("Wybrales lekcje nr 3");
-            MenuOfLesson();
+            Console.WriteLine("naciśnij dowolny klawisz ...");
             string option = Console.ReadLine();
 
             while (option != "0")
@@ -325,8 +327,8 @@ namespace First
 
                 else if (option == "9")
                 {
-                    TaskContentLesson_2();
-
+                    ListOfTasksForLessonThree listOfTasksForLessonThree = new ListOfTasksForLessonThree();
+                    listOfTasksForLessonThree.PrintLessonThreeTasks();
                 }
             }
             LessonOfService();
@@ -454,8 +456,8 @@ namespace First
 
                 else if (option == "19")
                 {
-                    //TaskContentLesson_4();
-                    // Wypisanie wszystkich lekcji
+                    ListOfTasksForLessonFour listOfTasksForLessonFour = new ListOfTasksForLessonFour();
+                    listOfTasksForLessonFour.PrintLessonFourTasks();
                 }
             }
             LessonOfService();
@@ -1751,18 +1753,6 @@ namespace First
                 side = double.Parse(auxiliaryValue);
             }
             return side;
-        }
-
-        static void TaskContentLesson_2()
-        {
-            Console.WriteLine("Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int, które zostaną zadeklarowane w kodzie programu. Zwróć uwagę na zachowanie programu i wyświetlone komunikaty.");
-            Console.WriteLine("Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int ze zdefiniowanymi wartościami, które będą przez Ciebie podane w kodzie. Wypisz wynik porównania w konsoli.");
-            Console.WriteLine("Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int, których wartości zostaną pobrane z konsoli. Wypisz wynik porównania w konsoli.");
-            Console.WriteLine("Napisz program konsolowy, który sprawdzi, czy wartość pobrana z konsoli jest większa od 5 i mniejsza od 20. Wypisz wynik w konsoli.");
-            Console.WriteLine("Napisz program konsolowy, który sprawdzi, czy wartość pobrana z konsoli jest spoza zakresu <5; 20>. Wypisz wynik w konsoli.");
-            Console.WriteLine("Napisz program konsolowy, który pobierze z konsoli dwie liczby całkowite, po czym do trzeciej zmiennej przypisze większą wartość. Wykorzystaj przypisanie warunkowe i wypisz wynik w konsoli.");
-            Console.WriteLine("Napisz program konsolowy, który pobierze z konsoli długości trzech boków trójkąta. Sprawdź, czy z podanych wartości można utworzyć trójkąt. Wypisz wynik w konsoli.");
-            Console.WriteLine("Napisz program konsolowy, który pobierze dwie wartości z konsoli. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Pamiętaj, żeby przy próbie dzielenia przez 0 wyświetlić odpowiedni komunikat, który uniemożliwi przeprowadzenie „zakazanego” działania. Użyj typu danych double.");
         }
     }
 }

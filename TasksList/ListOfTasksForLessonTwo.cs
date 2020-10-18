@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace First.ToDoList
+namespace First.TasksList
 {
     public class ListOfTasksForLessonTwo
     {
@@ -17,12 +17,15 @@ namespace First.ToDoList
             lessonTwoTasks.Add("6. Napisz program konsolowy, który pobierze z konsoli dwie liczby całkowite, po czym do trzeciej zmiennej przypisze większą wartość. Wykorzystaj przypisanie warunkowe i wypisz wynik w konsoli.");
             lessonTwoTasks.Add("7. Napisz program konsolowy, który pobierze z konsoli długości trzech boków trójkąta. Sprawdź, czy z podanych wartości można utworzyć trójkąt. Wypisz wynik w konsoli.");
             lessonTwoTasks.Add("8. Napisz program konsolowy, który pobierze dwie wartości z konsoli. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Pamiętaj, żeby przy próbie dzielenia przez 0 wyświetlić odpowiedni komunikat, który uniemożliwi przeprowadzenie „zakazanego” działania. Użyj typu danych double.");
-            
-            Console.WriteLine();
+
+            Console.Clear();
             foreach (string lesson in lessonTwoTasks)
             {
                 Console.WriteLine(lesson);
+                Console.WriteLine();
             }
+            Console.WriteLine("Powrót do listy - naciśnij dowolny klawisz");
+            Console.ReadKey();
         }
 
     }
