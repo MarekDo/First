@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32.SafeHandles;
+﻿using First.ToDoList;
+using Microsoft.Win32.SafeHandles;
 using System;
 using System.ComponentModel.Design.Serialization;
 using System.Dynamic;
@@ -183,8 +184,8 @@ namespace First
                 }
                 else if (option == "5")
                 {
-                    TaskContentLesson_1();
-
+                    ListOfTasksForLessonOne listOfTasksForLessonOne = new ListOfTasksForLessonOne();
+                    listOfTasksForLessonOne.PrintLessonOneTasks();
                 }
 
             }
@@ -1749,14 +1750,6 @@ namespace First
                 side = double.Parse(auxiliaryValue);
             }
             return side;
-        }
-
-        static void TaskContentLesson_1()
-        {
-            Console.WriteLine("Wypisz w konsoli swoje imię i nazwisko, wykorzystując w tym celu wszystkie znane Ci metody wyświetlania komunikatów.");
-            Console.WriteLine("Zad. 2. Utwórz dwie zmienne liczbowe i przypisz im wartości. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Niech druga liczba nie będzie zerem. Użyj typu danych double. ");
-            Console.WriteLine("Utwórz dwie zmienne liczbowe i przypisz im wartości podane poprzez konsolę. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Niech druga liczba nie będzie zerem. Użyj typu danych double.");
-            Console.WriteLine("Utwórz dwie zmienne liczbowe typu double. Dla każdego z działań (dodawanie, odejmowanie, mnożenie i dzielenie) przypisz z konsoli nowy zestaw liczb oraz wypisz ich wyniki w konsoli w formie pełnych działań arytmetycznych($”{ }”).");
         }
 
         static void TaskContentLesson_2()
