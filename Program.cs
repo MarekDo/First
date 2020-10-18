@@ -63,77 +63,26 @@ namespace First
 
         static void MenuOfLessonNr1()
         {
-            Console.Clear();
-            Console.WriteLine("Lekcja 1");
-            Console.WriteLine("1. Zadanie nr 1");
-            Console.WriteLine("2. Zadanie nr 2");
-            Console.WriteLine("3. Zadanie nr 3");
-            Console.WriteLine("4. Zadanie nr 4");
-            Console.WriteLine("5. Teskt poszczególnych zadań");
-            Console.WriteLine("0. Wyjście");
-            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+            MenuOfLessonOne menuOfLessonOne = new MenuOfLessonOne();
+            menuOfLessonOne.PrintOnScreenMainMenu();
         }
 
         static void MenuOfLesson2()
         {
-            Console.Clear();
-            Console.WriteLine("Lekcja 2");
-            Console.WriteLine("1. Zadanie nr 1");
-            Console.WriteLine("2. Zadanie nr 2");
-            Console.WriteLine("3. Zadanie nr 3");
-            Console.WriteLine("4. Zadanie nr 4");
-            Console.WriteLine("5. Zadanie nr 5");
-            Console.WriteLine("6. Zadanie nr 6");
-            Console.WriteLine("7. Zadanie nr 7");
-            Console.WriteLine("8. Zadanie nr 8");
-            Console.WriteLine("9. Teskt poszczególnych zadań");
-            Console.WriteLine("0. Wyjście");
-            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+            MenuOfLessonTwo menuOfLessonTwo = new MenuOfLessonTwo();
+            menuOfLessonTwo.PrintOnScreenMainMenu();
         }
 
         static void MenuOfLesson3()
         {
-            Console.Clear();
-            Console.WriteLine("Lekcja 3");
-            Console.WriteLine("1. Zadanie nr 1");
-            Console.WriteLine("2. Zadanie nr 2");
-            Console.WriteLine("3. Zadanie nr 3");
-            Console.WriteLine("4. Zadanie nr 4");
-            Console.WriteLine("5. Zadanie nr 5");
-            Console.WriteLine("6. Zadanie nr 6");
-            Console.WriteLine("7. Zadanie nr 7");
-            Console.WriteLine("8. Zadanie nr 8");
-            Console.WriteLine("9. Teskt poszczególnych zadań");
-            Console.WriteLine("0. Wyjście");
-            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+            MenuOfLessonThree menuOfLessonThree = new MenuOfLessonThree();
+            menuOfLessonThree.PrintOnScreenMainMenu();
         }
 
         static void MenuOfLesson4()
         {
-            Console.Clear();
-            Console.WriteLine("Lekcja 4");
-            Console.WriteLine("1. Zadanie nr 1");
-            Console.WriteLine("2. Zadanie nr 2");
-            Console.WriteLine("3. Zadanie nr 3");
-            Console.WriteLine("4. Zadanie nr 4");
-            Console.WriteLine("5. Zadanie nr 5");
-            Console.WriteLine("6. Zadanie nr 6");
-            Console.WriteLine("7. Zadanie nr 7");
-            Console.WriteLine("8. Zadanie nr 8");
-            Console.WriteLine("9. Zadanie nr 9");
-            Console.WriteLine("10. Zadanie nr 10");
-            Console.WriteLine("11. Zadanie nr 11");
-            Console.WriteLine("12. Zadanie nr 12");
-            Console.WriteLine("13. Zadanie nr 13");
-            Console.WriteLine("14. Zadanie nr 14");
-            Console.WriteLine("15. Zadanie nr 15");
-            Console.WriteLine("16. Zadanie nr 16");
-            Console.WriteLine("17. Zadanie nr 17");
-            Console.WriteLine("18. Zadanie nr 18");
-            Console.WriteLine("19. Teskt poszczególnych zadań");
-            Console.WriteLine("0. Wyjście");
-
-            Console.WriteLine("Wprowadzony nr zatwierdź enterem");
+            MenuOfLessonFour menuOfLessonFour = new MenuOfLessonFour();
+            menuOfLessonFour.PrintOnScreenMainMenu();
         }
 
         static void LessonNumber_1()
@@ -332,7 +281,7 @@ namespace First
         static void LessonNumber_4()
         {
             Console.WriteLine("Wybrales lekcje nr 4");
-            MenuOfLesson();
+           
             string option = Console.ReadLine();
 
             while (option != "0")
