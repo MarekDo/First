@@ -440,13 +440,13 @@ namespace First
                 else if (option == "17")
                 {
                     Console.Clear();
-                    //Lesson4Part17();
+                    Lesson4Part17();
                     Console.ReadKey();
                 }
                 else if (option == "18")
                 {
                     Console.Clear();
-                    //Lesson4Part18();
+                    Lesson4Part18();
                     Console.ReadKey();
                 }
 
@@ -1581,6 +1581,31 @@ namespace First
                 Console.WriteLine();
             }
 
+        }
+
+        static void Lesson4Part17()
+        {
+            /*
+             * Napisz program, który będzie rysował w konsoli za pomocą gwiazdek 
+             * trójkąt prostokątny równoramienny o wysokości podanej przez użytkownika.
+             */
+
+            Console.WriteLine("Podaj wysokość trójkąta równoramiennego");
+            int heightOfTheTriangle = int.Parse(Console.ReadLine());
+
+            for(int i = 0; i <= heightOfTheTriangle; i++)
+            {
+                for(int j = 0; j <= heightOfTheTriangle; i++)
+                {
+                    Console.WriteLine("*");
+                }
+            }
+
+        }
+
+        static void Lesson4Part18()
+        {
+            //TODO
         }
 
         static void trapeze38()
