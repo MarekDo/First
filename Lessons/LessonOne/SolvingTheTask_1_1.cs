@@ -13,11 +13,12 @@ namespace First.Lessons.LessonOne
         * Wypisz w konsoli swoje imię i nazwisko, wykorzystując
         * w tym celu wszystkie znane Ci metody wyświetlania komunikatów.
         */
-
-
         public void Solving_1_1()
         {
             Console.Clear();
+            ListOfTasksForLessonOne listOfTasksForLessonOne = new ListOfTasksForLessonOne();
+            Console.WriteLine(listOfTasksForLessonOne.PrintLessonOneTasks(1)); 
+
             EnterUser enterUser = new EnterUser();
             enterUser.EnterName();
             enterUser.PrintDateOfUser();
