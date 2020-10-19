@@ -6,7 +6,7 @@ namespace First.TasksList
 {
     public class ListOfTasksForLessonOne
     {
-        List<string> lessonOneTasks;
+        private List<string> lessonOneTasks;
         public ListOfTasksForLessonOne()
         {
             lessonOneTasks = new List<string>();
@@ -15,7 +15,6 @@ namespace First.TasksList
             lessonOneTasks.Add("3. Utwórz dwie zmienne liczbowe i przypisz im wartości podane poprzez konsolę. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Niech druga liczba nie będzie zerem. Użyj typu danych double.");
             lessonOneTasks.Add("4. Utwórz dwie zmienne liczbowe typu double. Dla każdego z działań (dodawanie, odejmowanie, mnożenie i dzielenie) przypisz z konsoli nowy zestaw liczb oraz wypisz ich wyniki w konsoli w formie pełnych działań arytmetycznych($”{ }”).");
         }
-
         public void PrintLessonOneTasks()
         {
             foreach(string leson in lessonOneTasks)

@@ -6,9 +6,11 @@ namespace First.TasksList
 {
     public class ListOfTasksForLessonFour
     {
-        public void PrintLessonFourTasks()
+        private List<string> lessonFourTasks;
+
+        public ListOfTasksForLessonFour()
         {
-            List<string> lessonFourTasks = new List<string>();
+            lessonFourTasks = new List<string>();
             lessonFourTasks.Add("1. Napisz program, który wypisze liczby od 0 do podanej przez użytkownika. Pamiętaj o zachowaniu odpowiednich odstępów pomiędzy poszczególnymi liczbami.");
             lessonFourTasks.Add("2. Zmodyfikuj poprzedni program tak, żeby tym razem użytkownik mógł wybrać także liczbę początkową. Zwróć uwagę, czy wypisane są także liczby graniczne.");
             lessonFourTasks.Add("3. Zmodyfikuj program z zad. 1. tak, żeby zamiast wypisywać liczby od 0, zaczął odliczać od liczby podanej przez użytkownika do zera.");
@@ -28,7 +30,9 @@ namespace First.TasksList
             lessonFourTasks.Add("17. Napisz program, który będzie rysował w konsoli za pomocą gwiazdek trójkąt prostokątny równoramienny o wysokości podanej przez użytkownika.");
             lessonFourTasks.Add("18. Napisz program, który będzie rysował w konsoli za pomocą gwiazdek trójkąt równoramienny o długości podstawy podanej przez użytkownika. Weź pod uwagę, czy podana długość jest parzysta, czy nie i uwzględnij podczas implementacji. Podstawa ma być na dole!");
 
-
+        }
+        public void PrintLessonFourTasks()
+        {
             Console.Clear();
             foreach (string lesson in lessonFourTasks)
             {
@@ -36,6 +40,10 @@ namespace First.TasksList
             }
             Console.WriteLine("Powrót do listy - naciśnij dowolny klawisz");
             Console.ReadKey();
+        }
+        public string PrintLessonThreeTasks(int numberOfLesson)
+        {
+            return lessonFourTasks[numberOfLesson - 1];
         }
     }
 }

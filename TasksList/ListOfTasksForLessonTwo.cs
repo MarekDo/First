@@ -6,9 +6,11 @@ namespace First.TasksList
 {
     public class ListOfTasksForLessonTwo
     {
-        public void PrintLessonTwoTasks()
+        private List<string> lessonTwoTasks;
+
+        public ListOfTasksForLessonTwo()
         {
-            List<string> lessonTwoTasks = new List<string>();
+            lessonTwoTasks = new List<string>();
             lessonTwoTasks.Add("1. Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int, które zostaną zadeklarowane w kodzie programu. Zwróć uwagę na zachowanie programu i wyświetlone komunikaty.");
             lessonTwoTasks.Add("2. Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int ze zdefiniowanymi wartościami, które będą przez Ciebie podane w kodzie. Wypisz wynik porównania w konsoli.");
             lessonTwoTasks.Add("3. Napisz program konsolowy, który porówna ze sobą dwie zmienne typu int, których wartości zostaną pobrane z konsoli. Wypisz wynik porównania w konsoli.");
@@ -17,16 +19,22 @@ namespace First.TasksList
             lessonTwoTasks.Add("6. Napisz program konsolowy, który pobierze z konsoli dwie liczby całkowite, po czym do trzeciej zmiennej przypisze większą wartość. Wykorzystaj przypisanie warunkowe i wypisz wynik w konsoli.");
             lessonTwoTasks.Add("7. Napisz program konsolowy, który pobierze z konsoli długości trzech boków trójkąta. Sprawdź, czy z podanych wartości można utworzyć trójkąt. Wypisz wynik w konsoli.");
             lessonTwoTasks.Add("8. Napisz program konsolowy, który pobierze dwie wartości z konsoli. Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. Pamiętaj, żeby przy próbie dzielenia przez 0 wyświetlić odpowiedni komunikat, który uniemożliwi przeprowadzenie „zakazanego” działania. Użyj typu danych double.");
-
+        }
+        public void PrintLessonTwoTasks()
+        {
             Console.Clear();
-            foreach (string lesson in lessonTwoTasks)
-            {
-                Console.WriteLine(lesson);
-                Console.WriteLine();
-            }
+                foreach (string lesson in lessonTwoTasks)
+                {
+                    Console.WriteLine(lesson);
+                    Console.WriteLine();
+                }
             Console.WriteLine("Powrót do listy - naciśnij dowolny klawisz");
             Console.ReadKey();
         }
 
+        public string PrintLessonTwoTasks(int numberOfLesson)
+        {
+             return lessonTwoTasks[numberOfLesson - 1];
+        }
     }
 }
