@@ -1,4 +1,5 @@
 ﻿
+using First.Lessons.LessonOne;
 using First.Menus;
 using First.TasksList;
 using Microsoft.Win32.SafeHandles;
@@ -88,6 +89,8 @@ namespace First
                 if (option == "1")
                 {
                     Console.Clear();
+                    SolvingTheTask_1_1 solvingTheTask_1_1 = new SolvingTheTask_1_1();
+
                     Lesson1Part1();
                     Console.WriteLine("Wciśnij dowolny klawisz ...");
                     Console.ReadKey();
