@@ -79,7 +79,7 @@ namespace First
         {
             Console.WriteLine("Wybrales lekcje nr 1");
             Console.WriteLine("Wciśnij dowolny klawisz ...");
-            string option = Console.ReadLine();
+            string option = "-1";
 
             while (option != "0")
             {
@@ -88,13 +88,8 @@ namespace First
 
                 if (option == "1")
                 {
-                    Console.Clear();
                     SolvingTheTask_1_1 solvingTheTask_1_1 = new SolvingTheTask_1_1();
-
-                    Lesson1Part1();
-                    Console.WriteLine("Wciśnij dowolny klawisz ...");
-                    Console.ReadKey();
-
+                    solvingTheTask_1_1.Solving_1_1();
                 }
                 else if (option == "2")
                 {

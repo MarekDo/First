@@ -17,7 +17,7 @@ namespace First.Lessons.LessonOne
 
         public void Solving_1_1()
         {
-
+            Console.Clear();
             EnterUser enterUser = new EnterUser();
             enterUser.EnterName();
             enterUser.PrintDateOfUser();
