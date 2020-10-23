@@ -5,7 +5,7 @@ using System.Text;
 
 namespace First.Lessons.LessonOne
 {
-    class SolvingTheTask_1_2
+    public class SolvingTheTask_1_2
     {
             /*
              Zad. 2. Utwórz dwie zmienne liczbowe i przypisz im wartości. 
@@ -25,6 +25,7 @@ namespace First.Lessons.LessonOne
             double division = firstValue / secondValue;
 
             Console.Clear();
+            Console.WriteLine(  "Lekcja nr 1; Zadanie nr 2");
             ListOfTasksForLessonOne listOfTasksForLessonOne = new ListOfTasksForLessonOne();
             Console.WriteLine(listOfTasksForLessonOne.PrintLessonOneTasks(2));
 
@@ -38,7 +39,6 @@ namespace First.Lessons.LessonOne
             Console.WriteLine("odejmowanie: " + firstValue + " - " + secondValue + " = " + subtraction);
             Console.WriteLine("mnożenie: " + firstValue + " * " + secondValue + " = " + multiplication);
             Console.WriteLine("dzielenie: " + firstValue + " / " + secondValue + " = " + division);
-            Console.WriteLine();
             Console.ReadKey();
         }
     }

@@ -16,6 +16,7 @@ namespace First.Lessons.LessonOne
         public void Solving_1_1()
         {
             Console.Clear();
+            Console.WriteLine("Lekcja nr 1; zadanie nr 1");
             ListOfTasksForLessonOne listOfTasksForLessonOne = new ListOfTasksForLessonOne();
             Console.WriteLine(listOfTasksForLessonOne.PrintLessonOneTasks(1)); 
 
