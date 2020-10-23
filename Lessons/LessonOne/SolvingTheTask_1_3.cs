@@ -8,12 +8,12 @@ namespace First.Lessons.LessonOne
     public class SolvingTheTask_1_3
     {
         /*
- * Utwórz dwie zmienne liczbowe i przypisz im wartości podane poprzez konsolę. 
- * Wyświetl w konsoli wyniki 
- * dodawania, odejmowania, mnożenia oraz dzielenia. 
- * Niech druga liczba nie będzie zerem. 
- * Użyj typu danych double.
- */
+        * Utwórz dwie zmienne liczbowe i przypisz im wartości podane poprzez konsolę. 
+        * Wyświetl w konsoli wyniki 
+        * dodawania, odejmowania, mnożenia oraz dzielenia. 
+        * Niech druga liczba nie będzie zerem. 
+        * Użyj typu danych double.
+        */
 
         public void Solving_1_3()
         {

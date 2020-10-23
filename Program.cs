@@ -103,11 +103,8 @@ namespace First
                 }
                 else if (option == "4")
                 {
-                    Console.Clear();
-                    Lesson1Part4();
-                    Console.WriteLine("Wciśnij dowolny klawisz ...");
-                    Console.ReadKey();
-
+                    SolvingTheTask_1_4 solvingTheTask_1_4 = new SolvingTheTask_1_4();
+                    solvingTheTask_1_4.Solving_1_4();
                 }
                 else if (option == "5")
                 {
@@ -386,77 +383,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson1Part4()
-        {
-
-
-            Console.WriteLine("\n Zadanie nr 4");
-            /*
-             * Utwórz dwie zmienne liczbowe typu double. 
-             * Dla każdego z działań 
-             * (dodawanie, odejmowanie, mnożenie i dzielenie) 
-             * przypisz z konsoli nowy zestaw liczb 
-             * oraz wypisz ich wyniki w konsoli w formie pełnych działań arytmetycznych ($”{}”).
-             */
-
-            double firstValueFourthPart;
-            double secondValueFourthPart;
-
-            Console.WriteLine("Podaj pierwszą wartość dodawania: ");
-            string valueFromConsoleFourthPart = Console.ReadLine();
-            firstValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-            Console.WriteLine("Podaj drugą wartość dodawania: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            secondValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-
-            Console.WriteLine($"Wynik dodawania: {firstValueFourthPart} + {secondValueFourthPart} " +
-                $"= {firstValueFourthPart + secondValueFourthPart}");
-
-            Console.WriteLine();
-            Console.WriteLine("Podaj pierwszą wartość odejmowania: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            firstValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-            Console.WriteLine("Podaj drugą wartość odejmowania: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            secondValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-
-            Console.WriteLine($"Wynik odejmowania: {firstValueFourthPart} - {secondValueFourthPart} " +
-                 $"= {firstValueFourthPart - secondValueFourthPart}");
-
-            Console.WriteLine();
-            Console.WriteLine("Podaj pierwszą wartość mnożenia: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            firstValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-            Console.WriteLine("Podaj drugą wartość mnożenia: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            secondValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-
-            Console.WriteLine($"Wynik mnożenia: {firstValueFourthPart} * {secondValueFourthPart} " +
-                 $"= {firstValueFourthPart * secondValueFourthPart}");
-
-            Console.WriteLine();
-            Console.WriteLine("Podaj pierwszą wartość dzielenia: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            firstValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-            Console.WriteLine("Podaj drugą wartość dzielenia inną niż zero: ");
-            valueFromConsoleFourthPart = Console.ReadLine();
-            secondValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-            while (secondValueFourthPart == 0)
-            {
-                Console.WriteLine("Miałeś podać wartość inną niż zero !!!!!!!!!!!!");
-                Console.WriteLine("Jeszcze raz, skup się, to proste:");
-                Console.WriteLine("Wpisz drugą liczbę inną niż zero: ");
-                valueFromConsoleFourthPart = Console.ReadLine();
-                secondValueFourthPart = Double.Parse(valueFromConsoleFourthPart);
-
-            }
-            Console.WriteLine("Ok, podana druga wartość jest poprawna ");
-
-
-            Console.WriteLine($"Wynik dzielenia: {firstValueFourthPart} / {secondValueFourthPart} " +
-                 $"= {firstValueFourthPart / secondValueFourthPart}");
         }
 
         static void Lesson2Part1()
