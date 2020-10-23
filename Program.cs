@@ -93,10 +93,8 @@ namespace First
                 }
                 else if (option == "2")
                 {
-                    Console.Clear();
-                    Lesson1Part2();
-                    Console.WriteLine("Wciśnij dowolny klawisz ...");
-                    Console.ReadKey();
+                    SolvingTheTask_1_2 solvingTheTask_1_2 = new SolvingTheTask_1_2();
+                    solvingTheTask_1_2.Solving_1_2();
 
                 }
                 else if (option == "3")
@@ -392,51 +390,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson1Part1()
-        {
-            Console.WriteLine("Zadanie nr 1");
-            /*
-             * Wypisz w konsoli swoje imię i nazwisko, wykorzystując
-             * w tym celu wszystkie znane Ci metody wyświetlania komunikatów.
-            */
-
-            EnterUser enterUser = new EnterUser();
-            enterUser.EnterName();
-            enterUser.PrintDateOfUser();
-            Console.ReadKey();
-        }
-
-        static void Lesson1Part2()
-        {
-
-            Console.WriteLine("\n Zadanie nr 2");
-            /*
-             Zad. 2. Utwórz dwie zmienne liczbowe i przypisz im wartości. 
-            Wyświetl w konsoli wyniki 
-            dodawania, odejmowania, mnożenia oraz dzielenia. 
-            Niech druga liczba nie będzie zerem. 
-            Użyj typu danych double.
-            */
-
-            double firstValue = 5.25;
-            double secondValue = 6.78;
-            double sum = firstValue + secondValue;
-            double subtraction = firstValue - secondValue;
-            double multiplication = firstValue * secondValue;
-            double division = firstValue / secondValue;
-
-            Console.WriteLine("pierwszy sposób prezentacji");
-            Console.WriteLine($"{firstValue} + {secondValue} = {sum}");
-            Console.WriteLine($"{firstValue} - {secondValue} = {subtraction}");
-            Console.WriteLine($"{firstValue} * {secondValue} = {multiplication}");
-            Console.WriteLine($"{firstValue} / {secondValue} = {division}");
-            Console.WriteLine();
-            Console.WriteLine("dodawanie: " + firstValue + " + " + secondValue + " = " + sum);
-            Console.WriteLine("odejmowanie: " + firstValue + " - " + secondValue + " = " + subtraction);
-            Console.WriteLine("mnożenie: " + firstValue + " * " + secondValue + " = " + multiplication);
-            Console.WriteLine("dzielenie: " + firstValue + " / " + secondValue + " = " + division);
         }
 
         static void Lesson1Part3()
