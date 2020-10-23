@@ -1,5 +1,6 @@
 ﻿
 using First.Lessons.LessonOne;
+using First.Lessons.LessonTwo;
 using First.Menus;
 using First.TasksList;
 using Microsoft.Win32.SafeHandles;
@@ -57,7 +58,7 @@ namespace First
             menuOfLessonOne.PrintOnScreenMainMenu();
         }
 
-        static void MenuOfLesson2()
+        static void MenuOfLessonNr2()
         {
             MenuOfLessonTwo menuOfLessonTwo = new MenuOfLessonTwo();
             menuOfLessonTwo.PrintOnScreenMainMenu();
@@ -120,19 +121,18 @@ namespace First
         static void LessonNumber_2()
         {
             Console.WriteLine("Wybrales lekcje nr 2");
-            Console.WriteLine("Press any key...");
-            string option = Console.ReadLine();
+            Console.WriteLine("Wciśnij dowolny klawisz ...");
+            string option = "-1";
 
             while (option != "0")
             {
-                MenuOfLesson2();
+                MenuOfLessonNr2();
                 option = Console.ReadLine();
 
                 if (option == "1")
                 {
-                    Console.Clear();
-                    Lesson2Part1();
-                    Console.ReadKey();
+                    SolvingTheTask_2_1 solvingTheTask_2_1 = new SolvingTheTask_2_1();
+                    solvingTheTask_2_1.Solving_2_1();
                 }
                 else if (option == "2")
                 {
@@ -383,32 +383,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson2Part1()
-        {
-            int firstValue = 45;
-            int secondValue = 80;
-
-            /*
-             * Napisz program konsolowy, który spróbuje porównać ze sobą dwie zmienne typu int,
-             * które zostaną zadeklarowane w kodzie programu. Zwróć uwagę na zachowanie programu
-             * i wyświetlone komunikaty.
-            */
-
-            if (firstValue == secondValue)
-            {
-                Console.WriteLine(firstValue + " równe " + secondValue);
-            }
-            else if (firstValue < secondValue)
-            {
-                Console.WriteLine(firstValue + " jest mniejsze od " + secondValue);
-            }
-            else
-                Console.WriteLine(firstValue + " jest większe " + secondValue);
-
-            Console.ReadKey();
-
         }
 
         static void Lesson2Part2()

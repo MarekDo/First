@@ -17,8 +17,8 @@ namespace First.Menus
             menuTwo.Add("6. Zadanie nr 6");
             menuTwo.Add("7. Zadanie nr 7");
             menuTwo.Add("8. Zadanie nr 8");
-            menuTwo.Add("9.Teskt poszczególnych zadań");
-            menuTwo.Add("0.Wyjście");
+            menuTwo.Add("9. Tekst poszczególnych zadań");
+            menuTwo.Add("0. Wyjście");
 
             Console.Clear();
             Console.WriteLine("Lekcja 2");
