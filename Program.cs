@@ -153,13 +153,11 @@ namespace First
                 {
                     SolvingTheTask_2_5 solvingTheTask_2_5 = new SolvingTheTask_2_5();
                     solvingTheTask_2_5.Solving_2_5();
-
                 }
                 else if (option == "6")
                 {
-                    Console.Clear();
-                    Lesson2Part6();
-                    Console.ReadKey();
+                    SolvingTheTask_2_6 solvingTheTask_2_6 = new SolvingTheTask_2_6();
+                    solvingTheTask_2_6.Solving_2_6();                   
                 }
                 else if (option == "7")
                 {
@@ -380,43 +378,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson2Part6()
-        {
-            /*
-             * Napisz program konsolowy, który pobierze z konsoli dwie liczby całkowite, 
-             * po czym do trzeciej zmiennej przypisze większą wartość. 
-             * Wykorzystaj przypisanie warunkowe i wypisz wynik w konsoli.
-             */
-            int firstValue;
-            int secondValue;
-            int greaterValue;
-            string movingValue;
-
-            Console.WriteLine("Podaj pierwszą liczbę:");
-            movingValue = Console.ReadLine();
-            firstValue = int.Parse(movingValue);
-            Console.WriteLine("Wprowadź drugą wartość:");
-            movingValue = Console.ReadLine();
-            secondValue = int.Parse(movingValue);
-
-            if (firstValue == secondValue)
-            {
-                Console.WriteLine("obie rartości są takie same");
-                greaterValue = firstValue;
-            }
-            else if (firstValue < secondValue)
-            {
-                greaterValue = secondValue;
-                Console.WriteLine("Wieksza wartośc to: " + greaterValue);
-            }
-            else
-            {
-                greaterValue = firstValue;
-                Console.WriteLine("Większa wartość to: " + greaterValue);
-            }
-
         }
 
         static void Lesson2Part7()
