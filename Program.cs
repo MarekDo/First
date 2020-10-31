@@ -1,5 +1,6 @@
 ﻿
 using First.Lessons.LessonOne;
+using First.Lessons.LessonThree;
 using First.Lessons.LessonTwo;
 using First.Menus;
 using First.TasksList;
@@ -182,8 +183,8 @@ namespace First
         static void LessonNumber_3()
         {
             Console.WriteLine("Wybrales lekcje nr 3");
-            Console.WriteLine("naciśnij dowolny klawisz ...");
-            string option = Console.ReadLine();
+            Console.WriteLine("Wciśnij dowolny klawisz ...");
+            string option = "-1";
 
             while (option != "0")
             {
@@ -192,9 +193,8 @@ namespace First
 
                 if (option == "1")
                 {
-                    Console.Clear();
-                    Lesson3Part1();
-                    Console.ReadKey();
+                    SolvingTheTask_3_1 solvingTheTask_3_1 = new SolvingTheTask_3_1();
+                    solvingTheTask_3_1.Solving_3_1();                   
                 }
                 else if (option == "2")
                 {
@@ -377,89 +377,6 @@ namespace First
             LessonOfService();
         }
 
-        static void Lesson3Part1()
-        {
-            /*
-             * Napisz kalkulator, w którym użytkownik poda dwie liczby, 
-             * a następnie wybierze działanie, które chce wykonać 
-             * (1. Dodawanie, 2. Odejmowanie, 3. Mnożenie, 4. Dzielenie) i otrzyma w konsoli gotowy wynik. 
-             * Przy konstruowaniu logiki menu wyboru działania zastosuj konstrukcję if…else, 
-             * którą zagęścisz (warunek w warunku). 
-             * Pamiętaj cholero, nie dziel przez 0! 
-             * Co, jeśli użytkownik poda działanie nieprawidłowo?
-             */
-
-            double firstValue;
-            double secondValue;
-            string auxiliaryValue;
-            string menuValue;
-
-            Console.WriteLine("Kalkulator - sam wybierz jakie działanie ma być wykonane");
-            Console.WriteLine("Podaj pierwszą wartość");
-            auxiliaryValue = Console.ReadLine();
-            firstValue = double.Parse(auxiliaryValue);
-            Console.WriteLine("Podaj drugą wartość");
-            auxiliaryValue = Console.ReadLine();
-            secondValue = double.Parse(auxiliaryValue);
-            Console.WriteLine("Wciśnij 1 aby rozpocząć.");
-            Console.WriteLine("Wciśnij 0 aby zakończyć.");
-            menuValue = Console.ReadLine();
-
-            if (menuValue == "1") {
-                while (menuValue == "1")
-                {
-                    string miniMenuValue;
-                    Console.WriteLine("1. Dodawanie.");
-                    Console.WriteLine("2. Odejmowanie.");
-                    Console.WriteLine("3. Mnożenie.");
-                    Console.WriteLine("4. Mnożenie.");
-                    Console.WriteLine("0. Wyjdź z kalkulatora.");
-                    miniMenuValue = Console.ReadLine();
-
-                    if (miniMenuValue == "1")
-                    {
-                        Console.WriteLine("Wybrano dodawanie.");
-                        Console.WriteLine(firstValue + " + " + secondValue + " = " + (firstValue + secondValue));
-                    }
-                    if (miniMenuValue == "2")
-                    {
-                        Console.WriteLine("Wybrano odejmowanie.");
-                        Console.WriteLine(firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
-                    }
-                    if (miniMenuValue == "3")
-                    {
-                        Console.WriteLine("Wybrano mnożenie.");
-                        Console.WriteLine(firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
-                    }
-                    if (miniMenuValue == "4")
-                    {
-                        Console.WriteLine("Wybrano dzielenie.");
-                        if (secondValue != 0)
-                        {
-                            Console.WriteLine(firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
-                        }
-                        else if (secondValue == 0)
-                        {
-                            Console.WriteLine("Nie dziel cholero przez zero !!!");
-                            Console.WriteLine("Wprowadź wartość drugiel liczby ponownie - inna niż zero.");
-                        }
-                    }
-                    if (miniMenuValue == "0")
-                    {
-                        Console.WriteLine("Wyjście");
-                        return;
-                    }
-
-                }
-                if (menuValue == "0")
-                {
-                    return;
-                }
-
-
-            }
-
-        }
 
         static void Lesson3Part2()
         {
