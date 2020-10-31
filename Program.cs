@@ -146,9 +146,8 @@ namespace First
                 }
                 else if (option == "4")
                 {
-                    Console.Clear();
-                    Lesson2Part4();
-                    Console.ReadKey();
+                    SolvingTheTask_2_4 solvingTheTask_2_4 = new SolvingTheTask_2_4();
+                    solvingTheTask_2_4.Solving_2_4(); 
                 }
                 else if (option == "5")
                 {
@@ -383,36 +382,9 @@ namespace First
             LessonOfService();
         }
 
-        static void Lesson2Part4()
-        {
-            /*
-             * Napisz program konsolowy, który sprawdzi, 
-             * czy wartość pobrana z konsoli jest 
-             * większa od 5 i mniejsza od 20. Wypisz wynik w konsoli.
-             */
-
-            int firstValue = 5;
-            int secondValue = 20;
-            int movingVariable;
-            string stringMovingVariable;
-
-            Console.WriteLine("Wprowadź wartość do porównania:");
-            stringMovingVariable = Console.ReadLine();
-            movingVariable = int.Parse(stringMovingVariable);
-
-            if (movingVariable > firstValue && movingVariable < secondValue)
-            {
-                Console.WriteLine("podana wartość jest z przedziału pomiędzy 5 a 20");
-            }
-            else
-            {
-                Console.WriteLine("Podana wartość jest spoza zakresu 5 a 20");
-            }
-        }
-
         static void Lesson2Part5()
         {
-            Lesson2Part4();
+            //Lesson2Part4();
         }
 
         static void Lesson2Part6()
