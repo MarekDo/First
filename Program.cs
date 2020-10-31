@@ -166,16 +166,14 @@ namespace First
                 }
                 else if (option == "8")
                 {
-                    Console.Clear();
-                    Lesson2Part8();
-                    Console.ReadKey();
+                    SolvingTheTask_2_8 solvingTheTask_2_8 = new SolvingTheTask_2_8();
+                    solvingTheTask_2_8.Solving_2_8();                   
                 }
 
                 else if (option == "9")
                 {
                     ListOfTasksForLessonTwo listOfTasksForLessonTwo = new ListOfTasksForLessonTwo();
-                    listOfTasksForLessonTwo.PrintLessonTwoTasks();
-                    
+                    listOfTasksForLessonTwo.PrintLessonTwoTasks();                 
                 }
             }
             LessonOfService();
@@ -377,41 +375,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson2Part8()
-        {
-            /*
-             * Napisz program konsolowy, który pobierze dwie wartości z konsoli. 
-             * Wyświetl w konsoli wyniki dodawania, odejmowania, mnożenia oraz dzielenia. 
-             * Pamiętaj, żeby przy próbie dzielenia przez 0 wyświetlić odpowiedni komunikat, 
-             * który uniemożliwi przeprowadzenie „zakazanego” działania. 
-             * Użyj typu danych double.
-             */
-
-            double firstValue;
-            double secondValue;
-            string auxiliaryValue;
-
-            Console.WriteLine("Wprowadź pierwszą wartość:");
-            auxiliaryValue = Console.ReadLine();
-            firstValue = double.Parse(auxiliaryValue);
-            Console.WriteLine("Wprowadź drugą wartość:");
-            auxiliaryValue = Console.ReadLine();
-            secondValue = double.Parse(auxiliaryValue);
-
-            Console.WriteLine("Wynik dodawania: " + firstValue + " + " + secondValue + " = " + (firstValue + secondValue));
-            Console.WriteLine("Wynik odejmowania: " + firstValue + " - " + secondValue + " = " + (firstValue - secondValue));
-            Console.WriteLine("Wynik mnożenia: " + firstValue + " * " + secondValue + " = " + (firstValue * secondValue));
-            if (secondValue != 0)
-            {
-                Console.WriteLine("Wynik dzielenia: " + firstValue + " / " + secondValue + " = " + (firstValue / secondValue));
-            }
-            else
-            {
-                Console.WriteLine("Dzielenie niewykonalne gdyż chcesz dzielić przez zero!! ");
-            }
-
         }
 
         static void Lesson3Part1()
