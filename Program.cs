@@ -151,9 +151,9 @@ namespace First
                 }
                 else if (option == "5")
                 {
-                    Console.Clear();
-                    Lesson2Part5();
-                    Console.ReadKey();
+                    SolvingTheTask_2_5 solvingTheTask_2_5 = new SolvingTheTask_2_5();
+                    solvingTheTask_2_5.Solving_2_5();
+
                 }
                 else if (option == "6")
                 {
@@ -380,11 +380,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson2Part5()
-        {
-            //Lesson2Part4();
         }
 
         static void Lesson2Part6()
