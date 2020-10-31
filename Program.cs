@@ -161,9 +161,8 @@ namespace First
                 }
                 else if (option == "7")
                 {
-                    Console.Clear();
-                    Lesson2Part7();
-                    Console.ReadKey();
+                    SolvingTheTask_2_7 solvingTheTask_2_7 = new SolvingTheTask_2_7();
+                    solvingTheTask_2_7.Solving_2_7();                   
                 }
                 else if (option == "8")
                 {
@@ -378,42 +377,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-        static void Lesson2Part7()
-        {
-            /*
-             * Napisz program konsolowy, który pobierze z konsoli długości trzech boków trójkąta.
-             * Sprawdź, czy z podanych wartości można utworzyć trójkąt. Wypisz wynik w konsoli.
-             */
-
-            double firstSide;
-            double secondSide;
-            double thirdSide;
-
-            Console.WriteLine("Podaj długości trzech boków trójkąta.");
-            Console.WriteLine("wartości muszą być większe od zera");
-
-            Console.WriteLine("Wpisz długość pierwszego boku:");
-            firstSide = EnterSideValue();
-
-            Console.WriteLine("Wpisz długość drugiego boku:");
-            secondSide = EnterSideValue();
-
-            Console.WriteLine("Wpisz długość trzeciego boku:");
-            thirdSide = EnterSideValue();
-
-            if ((firstSide + secondSide > thirdSide)
-                && (secondSide + thirdSide > firstSide)
-                && (firstSide + thirdSide > secondSide))
-            {
-                Console.WriteLine("Z podanych wartości można utworzyć trójkąt");
-            }
-            else
-            {
-                Console.WriteLine("Przykro mi z podanych wartości nie mozna utworzyć trójkąta.");
-            }
-
         }
 
         static void Lesson2Part8()
@@ -1330,20 +1293,6 @@ namespace First
         return variableValue;
     }
         
-        static double EnterSideValue()
-        {
-        string auxiliaryValue = Console.ReadLine();
-            double side = double.Parse(auxiliaryValue);
-
-            while(side <= 0)
-            {
-                    Console.WriteLine("wprowadziłeś wartość mniejszą lub równą zero");
-                    Console.WriteLine("Wprowadź jeszcze raz poprawną wartość większą od zera !!!");
-                auxiliaryValue = Console.ReadLine();
-                side = double.Parse(auxiliaryValue);
-            }
-            return side;
-        }
     }
 }
        
