@@ -17,8 +17,8 @@ namespace First.Menus
             menuThree.Add("6. Zadanie nr 6");
             menuThree.Add("7. Zadanie nr 7");
             menuThree.Add("8. Zadanie nr 8");
-            menuThree.Add("9.Teskt poszczególnych zadań");
-            menuThree.Add("0.Wyjście");
+            menuThree.Add("9. Teskt poszczególnych zadań");
+            menuThree.Add("0. Wyjście");
 
             Console.Clear();
             Console.WriteLine("Lekcja 3");
