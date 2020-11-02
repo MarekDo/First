@@ -198,9 +198,8 @@ namespace First
                 }
                 else if (option == "2")
                 {
-                    Console.Clear();
-                    Lesson3Part2();
-                    Console.ReadKey();
+                    SolvingTheTask_3_2 solvingTheTask_3_2 = new SolvingTheTask_3_2();
+                    solvingTheTask_3_2.Solving_3_2();                   
                 }
                 else if (option == "3")
                 {
@@ -375,14 +374,6 @@ namespace First
                 }
             }
             LessonOfService();
-        }
-
-
-        static void Lesson3Part2()
-        {
-            /*
-             * Wykonaj Zad. 1. modyfikując strukturę if…else na if…else if…else. Dostrzegasz różnicę?
-             */
         }
 
         static void Lesson3Part3()
